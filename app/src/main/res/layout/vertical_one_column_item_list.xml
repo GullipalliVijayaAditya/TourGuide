@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<!-- Item list layout used by RecyclerView in Portrait Mode in the
-DiningFragment, ShoppingFragment, VenuesFragment, and NightlifeFragment -->
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -22,7 +19,7 @@ DiningFragment, ShoppingFragment, VenuesFragment, and NightlifeFragment -->
         android:orientation="vertical">
 
         <ImageView
-            android:id="@+id/attraction_image"
+            android:id="@+id/attr_image"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
@@ -41,12 +38,12 @@ DiningFragment, ShoppingFragment, VenuesFragment, and NightlifeFragment -->
             android:layout_marginTop="@dimen/text_vertical_item_list_margin">
 
             <TextView
-                android:id="@+id/attraction_name"
+                android:id="@+id/attr_name"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="1"
-                tools:text="@string/attraction_name_long_example"
+                tools:text="@string/attr_name_long_example"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textStyle="bold"
                 android:clickable="true"
@@ -66,7 +63,7 @@ DiningFragment, ShoppingFragment, VenuesFragment, and NightlifeFragment -->
         </LinearLayout>
 
         <TextView
-            android:id="@+id/attraction_snippet"
+            android:id="@+id/attr_snippet"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/vertical_item_list_margin"
@@ -74,7 +71,7 @@ DiningFragment, ShoppingFragment, VenuesFragment, and NightlifeFragment -->
             android:layout_marginRight="@dimen/vertical_item_list_margin"
             android:layout_marginTop="@dimen/text_vertical_item_list_margin"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-            tools:text="@string/attraction_description_example"
+            tools:text="@string/attr_description_example"
             android:clickable="true"
             android:focusable="true"
             android:maxLines="2"

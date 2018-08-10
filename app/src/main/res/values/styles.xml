@@ -25,7 +25,7 @@
         <item name="android:layout_marginBottom">3dp</item>
     </style>
 
-    <style name="attraction_info_style_medium">
+    <style name="attr_info_style_medium">
         <item name="android:paddingLeft">16dp</item>
         <item name="android:background">#000000</item>
         <item name="android:textColor">#ffffff</item>
@@ -34,7 +34,7 @@
         <item name="android:textIsSelectable">true</item>
     </style>
 
-    <style name="attraction_info_style_small">
+    <style name="attr_info_style_small">
         <item name="android:paddingLeft">16dp</item>
         <item name="android:background">#000000</item>
         <item name="android:textColor">#f0f0f0</item>
@@ -42,7 +42,7 @@
         <item name="android:textIsSelectable">true</item>
     </style>
 
-    <style name="attraction_detail_more_info_black_bar">
+    <style name="attr_detail_more_info_black_bar">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">#000000</item>

@@ -5,474 +5,261 @@ import android.content.res.TypedArray;
 
 import java.util.ArrayList;
 
-/**
- * {@link Attraction represents an attraction or destination that the user is interested in visiting
- */
+
 public class Attraction {
-
-    // Name of the attraction
-    private String attractionName;
-
-    // Category of the Attraction. Will be either Dine, Shop, Venue, or Nightlife
-    private String attractionCategory;
-
-    // Formatted Address of the Location
-    private String attractionAddress;
-
-    // Geolocation Coordinates of the Location for Mapping Purposes
-    private String attractionCoordinates;
-
-    // Phone Number of the Attraction Formatted
-    private String attractionPhoneNumberText;
-
-    // Phone Number URL
-    private String attractionPhoneNumberLink;
-
-    // Attraction Website
-    private String attractionWebsite;
-
-    // Attraction Description
-    private String attractionDescription;
-
-    // Attraction Blurb
-    private String attractionBlurb;
-
-    // Attraction Image Resource Id
-    private int attractionImageId;
-
-    // Boolean keeps track of if Attraction was "liked" by the user
+    private String attrName;
+    private String attrCategory;
+    private String attrAddress;
+    private String attrCoordinates;
+    private String attrPhoneNumberText;
+    private String attrPhoneNumberLink;
+    private String attrWebsite;
+    private String attrDescription;
+    private String attrBlurb;
+    private int attrImageId;
     private boolean isFavorite;
 
-    //final static ArrayList<Attraction> diningList, shoppingList;
-
-    /**
-     * Constructs a new Attraction object
-     */
     public Attraction() {
     }
 
-    /**
-     * Constructs a new Attraction object using 10 inputs
-     *
-     * @param name        the attraction name
-     * @param category    the attraction category
-     * @param address     the attraction address
-     * @param coordinates the attraction coordinates
-     * @param phone       the attraction phone number
-     * @param phoneLink   phone number in link format
-     * @param website     the attraction website
-     * @param description the attraction description
-     * @param blurb       the attraction blurb
-     * @param imageId     the attraction's Image Resource id
-     */
-    public Attraction(String name, String category, String address, String coordinates,
-                      String phone, String phoneLink, String website, String description,
-                      String blurb, int imageId) {
-
-        // Set passed in parameters to be the new values of the Attraction fields
-        attractionName = name;
-        attractionCategory = category;
-        attractionAddress = address;
-        attractionCoordinates = coordinates;
-        attractionPhoneNumberText = phone;
-        attractionPhoneNumberLink = phoneLink;
-        attractionWebsite = website;
-        attractionDescription = description;
-        attractionBlurb = blurb;
-        attractionImageId = imageId;
+    public Attraction(String name, String category, String address, String coordinates, String phone, String phoneLink, String website, String description, String blurb, int imageId) {
+        attrName = name;
+        attrCategory = category;
+        attrAddress = address;
+        attrCoordinates = coordinates;
+        attrPhoneNumberText = phone;
+        attrPhoneNumberLink = phoneLink;
+        attrWebsite = website;
+        attrDescription = description;
+        attrBlurb = blurb;
+        attrImageId = imageId;
     }
 
-/*
-The next 22 methods are the getters and setters for all 11 fields of Attraction object
- */
-
     public String getAttractionName() {
-        return attractionName;
+        return attrName;
     }
 
     public void setAttractionName(String newAttractionName) {
-        attractionName = newAttractionName;
+        attrName = newAttractionName;
     }
 
     public String getAttractionCategory() {
-        return attractionCategory;
+        return attrCategory;
     }
 
     public void setAttractionCategory(String newAttractionCategory) {
-        attractionCategory = newAttractionCategory;
+        attrCategory = newAttractionCategory;
     }
 
     public String getAttractionAddress() {
-        return attractionAddress;
+        return attrAddress;
     }
 
     public void setAttractionAddress(String newAttractionAddress) {
-        attractionAddress = newAttractionAddress;
+        attrAddress = newAttractionAddress;
     }
 
     public String getAttractionCoordinates() {
-        return attractionCoordinates;
+        return attrCoordinates;
     }
 
     public void setAttractionCoordinates(String newAttractionCoordinates) {
-        attractionCoordinates = newAttractionCoordinates;
+        attrCoordinates = newAttractionCoordinates;
     }
 
     public String getAttractionPhoneNumberText() {
-        return attractionPhoneNumberText;
+        return attrPhoneNumberText;
     }
 
     public void setAttractionPhoneNumberText(String newAttractionPhoneNumberText) {
-        attractionPhoneNumberText = newAttractionPhoneNumberText;
+        attrPhoneNumberText = newAttractionPhoneNumberText;
     }
 
     public String getAttractionPhoneNumberLink() {
-        return attractionPhoneNumberLink;
+        return attrPhoneNumberLink;
     }
 
     public void setAttractionPhoneNumberLink(String newAttractionPhoneNumberLink) {
-        attractionPhoneNumberLink = newAttractionPhoneNumberLink;
+        attrPhoneNumberLink = newAttractionPhoneNumberLink;
     }
 
     public String getAttractionWebsite() {
-        return attractionWebsite;
+        return attrWebsite;
     }
 
     public void setAttractionWebsite(String newAttractionWebsite) {
-        attractionWebsite = newAttractionWebsite;
+        attrWebsite = newAttractionWebsite;
     }
 
     public String getAttractionDescription() {
-        return attractionDescription;
+        return attrDescription;
     }
 
     public void setAttractionDescription(String newAttractionDescription) {
-        attractionDescription = newAttractionDescription;
+        attrDescription = newAttractionDescription;
     }
 
     public String getAttractionBlurb() {
-        return attractionBlurb;
+        return attrBlurb;
     }
 
     public void setAttractionBlurb(String newAttractionBlurb) {
-        attractionBlurb = newAttractionBlurb;
+        attrBlurb = newAttractionBlurb;
     }
 
     public int getAttractionImageId() {
-        return attractionImageId;
+        return attrImageId;
     }
 
     public void setAttractionImageId(int newAttractionImageId) {
-        attractionImageId = newAttractionImageId;
+        attrImageId = newAttractionImageId;
     }
 
-    /**
-     * Returns fully populated arraylist containing all attractions from all categories
-     *
-     * @return fullListArray a fully populated ArrayList of Attraction objects from every category
-     */
     public ArrayList<Attraction> getFullListArray(Context context) {
         final ArrayList<Attraction> fullListArray = new ArrayList<>();
-
-        // Get String array resources and assign to String to populate ArrayList
-        String names[] = context.getResources().getStringArray(R.array.attraction_name);
-        String categories[] = context.getResources().getStringArray(R.array.attraction_category);
-        String addresses[] = context.getResources().getStringArray(R.array.attraction_address);
-        String coordinates[] = context.getResources().getStringArray(R.array.attraction_coordinates);
-        String phones[] = context.getResources().getStringArray(R.array.attraction_phone);
-        String phoneLinks[] = context.getResources().getStringArray(R.array.attraction_phone_link);
-        String website[] = context.getResources().getStringArray(R.array.attraction_website);
-        String descriptions[] = context.getResources().getStringArray(R.array.attraction_description);
-        String blurbs[] = context.getResources().getStringArray(R.array.attraction_blurb);
-
-        // Get array of image resource ids
-        TypedArray attractionImages = context.getResources().obtainTypedArray(R.array.attraction_images);
-
-        // Populate ArrayList from the string-arrays
+        String names[] = context.getResources().getStringArray(R.array.attr_name);
+        String categories[] = context.getResources().getStringArray(R.array.attr_category);
+        String addresses[] = context.getResources().getStringArray(R.array.attr_address);
+        String coordinates[] = context.getResources().getStringArray(R.array.attr_coordinates);
+        String phones[] = context.getResources().getStringArray(R.array.attr_phone);
+        String phoneLinks[] = context.getResources().getStringArray(R.array.attr_phone_link);
+        String website[] = context.getResources().getStringArray(R.array.attr_website);
+        String descriptions[] = context.getResources().getStringArray(R.array.attr_description);
+        String blurbs[] = context.getResources().getStringArray(R.array.attr_blurb);
+        TypedArray attrImages = context.getResources().obtainTypedArray(R.array.attr_images);
         for (int i = 0; i < names.length; i++) {
-            fullListArray.add(new Attraction(names[i], categories[i], addresses[i], coordinates[i],
-                    phones[i], phoneLinks[i], website[i], descriptions[i], blurbs[i],
-                    attractionImages.getResourceId(i, -1)));
+            fullListArray.add(new Attraction(names[i], categories[i], addresses[i], coordinates[i], phones[i], phoneLinks[i], website[i], descriptions[i], blurbs[i], attrImages.getResourceId(i, -1)));
         }
-
-        // Next, recycle TypedArray
-        attractionImages.recycle();
-
-        //Return the fully populated array
+        attrImages.recycle();
         return fullListArray;
     }
 
-    /**
-     * Returns fully populated arraylist from dining category
-     *
-     * @return diningArray a fully populated ArrayList of Attraction objects from dining category
-     */
     public ArrayList<Attraction> getDiningArray(Context context) {
         final ArrayList<Attraction> diningArray = new ArrayList<>();
-
-        // Get String array resources and assign to String to populate ArrayList
-        String names[] = context.getResources().getStringArray(R.array.attraction_name);
-        String categories[] = context.getResources().getStringArray(R.array.attraction_category);
-        String addresses[] = context.getResources().getStringArray(R.array.attraction_address);
-        String coordinates[] = context.getResources().getStringArray(R.array.attraction_coordinates);
-        String phones[] = context.getResources().getStringArray(R.array.attraction_phone);
-        String phoneLinks[] = context.getResources().getStringArray(R.array.attraction_phone_link);
-        String website[] = context.getResources().getStringArray(R.array.attraction_website);
-        String descriptions[] = context.getResources().getStringArray(R.array.attraction_description);
-        String blurbs[] = context.getResources().getStringArray(R.array.attraction_blurb);
-
-        // Get array of image resource ids
-        TypedArray attractionImages = context.getResources().obtainTypedArray(R.array.attraction_images);
-
-        // Populate ArrayList from the string-arrays
+        String names[] = context.getResources().getStringArray(R.array.attr_name);
+        String categories[] = context.getResources().getStringArray(R.array.attr_category);
+        String addresses[] = context.getResources().getStringArray(R.array.attr_address);
+        String coordinates[] = context.getResources().getStringArray(R.array.attr_coordinates);
+        String phones[] = context.getResources().getStringArray(R.array.attr_phone);
+        String phoneLinks[] = context.getResources().getStringArray(R.array.attr_phone_link);
+        String website[] = context.getResources().getStringArray(R.array.attr_website);
+        String descriptions[] = context.getResources().getStringArray(R.array.attr_description);
+        String blurbs[] = context.getResources().getStringArray(R.array.attr_blurb);
+        TypedArray attrImages = context.getResources().obtainTypedArray(R.array.attr_images);
         for (int i = 0; i < 4; i++) {
-            diningArray.add(new Attraction(names[i], categories[i], addresses[i], coordinates[i],
-                    phones[i], phoneLinks[i], website[i], descriptions[i], blurbs[i],
-                    attractionImages.getResourceId(i, -1)));
+            diningArray.add(new Attraction(names[i], categories[i], addresses[i], coordinates[i], phones[i], phoneLinks[i], website[i], descriptions[i], blurbs[i], attrImages.getResourceId(i, -1)));
         }
-
-        // Next, recycle TypedArray
-        attractionImages.recycle();
-
-        //Return the fully populated array
+        attrImages.recycle();
         return diningArray;
     }
 
-    /**
-     * Returns fully populated arraylist from shopping category
-     *
-     * @return shoppingArray a fully populated ArrayList of Attraction objects from shopping
-     * category
-     */
     public ArrayList<Attraction> getShoppingArray(Context context) {
         final ArrayList<Attraction> shoppingArray = new ArrayList<>();
-
-        // Get String array resources and assign to String to populate ArrayList
-        String names[] = context.getResources().getStringArray(R.array.attraction_name);
-        String categories[] = context.getResources().getStringArray(R.array.attraction_category);
-        String addresses[] = context.getResources().getStringArray(R.array.attraction_address);
-        String coordinates[] = context.getResources().getStringArray(R.array.attraction_coordinates);
-        String phones[] = context.getResources().getStringArray(R.array.attraction_phone);
-        String phoneLinks[] = context.getResources().getStringArray(R.array.attraction_phone_link);
-        String website[] = context.getResources().getStringArray(R.array.attraction_website);
-        String descriptions[] = context.getResources().getStringArray(R.array.attraction_description);
-        String blurbs[] = context.getResources().getStringArray(R.array.attraction_blurb);
-
-        // Get array of image resource ids
-        TypedArray attractionImages = context.getResources().obtainTypedArray(R.array.attraction_images);
-
-        // Populate ArrayList from the string-arrays
+        String names[] = context.getResources().getStringArray(R.array.attr_name);
+        String categories[] = context.getResources().getStringArray(R.array.attr_category);
+        String addresses[] = context.getResources().getStringArray(R.array.attr_address);
+        String coordinates[] = context.getResources().getStringArray(R.array.attr_coordinates);
+        String phones[] = context.getResources().getStringArray(R.array.attr_phone);
+        String phoneLinks[] = context.getResources().getStringArray(R.array.attr_phone_link);
+        String website[] = context.getResources().getStringArray(R.array.attr_website);
+        String descriptions[] = context.getResources().getStringArray(R.array.attr_description);
+        String blurbs[] = context.getResources().getStringArray(R.array.attr_blurb);
+        TypedArray attrImages = context.getResources().obtainTypedArray(R.array.attr_images);
         for (int i = 9; i < 12; i++) {
-            shoppingArray.add(new Attraction(names[i], categories[i], addresses[i], coordinates[i],
-                    phones[i], phoneLinks[i], website[i], descriptions[i], blurbs[i],
-                    attractionImages.getResourceId(i, -1)));
+            shoppingArray.add(new Attraction(names[i], categories[i], addresses[i], coordinates[i], phones[i], phoneLinks[i], website[i], descriptions[i], blurbs[i], attrImages.getResourceId(i, -1)));
         }
-
-        // Next, recycle TypedArray
-        attractionImages.recycle();
-
-        //Return the fully populated array
+        attrImages.recycle();
         return shoppingArray;
     }
 
-    /**
-     * Returns fully populated arraylist from venues category
-     *
-     * @return venuesArray a fully populated ArrayList of Attraction objects from venues
-     * category
-     */
     public ArrayList<Attraction> getVenuesArray(Context context) {
         final ArrayList<Attraction> venuesArray = new ArrayList<>();
-
-        // Get String array resources and assign to String to populate ArrayList
-        String names[] = context.getResources().getStringArray(R.array.attraction_name);
-        String categories[] = context.getResources().getStringArray(R.array.attraction_category);
-        String addresses[] = context.getResources().getStringArray(R.array.attraction_address);
-        String coordinates[] = context.getResources().getStringArray(R.array.attraction_coordinates);
-        String phones[] = context.getResources().getStringArray(R.array.attraction_phone);
-        String phoneLinks[] = context.getResources().getStringArray(R.array.attraction_phone_link);
-        String website[] = context.getResources().getStringArray(R.array.attraction_website);
-        String descriptions[] = context.getResources().getStringArray(R.array.attraction_description);
-        String blurbs[] = context.getResources().getStringArray(R.array.attraction_blurb);
-
-        // Get array of image resource ids
-        TypedArray attractionImages = context.getResources().obtainTypedArray(R.array.attraction_images);
-
-        // Populate ArrayList from the string-arrays
+        String names[] = context.getResources().getStringArray(R.array.attr_name);
+        String categories[] = context.getResources().getStringArray(R.array.attr_category);
+        String addresses[] = context.getResources().getStringArray(R.array.attr_address);
+        String coordinates[] = context.getResources().getStringArray(R.array.attr_coordinates);
+        String phones[] = context.getResources().getStringArray(R.array.attr_phone);
+        String phoneLinks[] = context.getResources().getStringArray(R.array.attr_phone_link);
+        String website[] = context.getResources().getStringArray(R.array.attr_website);
+        String descriptions[] = context.getResources().getStringArray(R.array.attr_description);
+        String blurbs[] = context.getResources().getStringArray(R.array.attr_blurb);
+        TypedArray attrImages = context.getResources().obtainTypedArray(R.array.attr_images);
         for (int i = 12; i < 16; i++) {
-            venuesArray.add(new Attraction(names[i], categories[i], addresses[i], coordinates[i],
-                    phones[i], phoneLinks[i], website[i], descriptions[i], blurbs[i],
-                    attractionImages.getResourceId(i, -1)));
+            venuesArray.add(new Attraction(names[i], categories[i], addresses[i], coordinates[i], phones[i], phoneLinks[i], website[i], descriptions[i], blurbs[i], attrImages.getResourceId(i, -1)));
         }
-
-        // Next, recycle TypedArray
-        attractionImages.recycle();
-
-        //Return the fully populated array
+        attrImages.recycle();
         return venuesArray;
     }
 
-    /**
-     * Returns fully populated arraylist from nightlife category
-     *
-     * @return nightlifeArray a fully populated ArrayList of Attraction objects from nightlife
-     * category
-     */
     public ArrayList<Attraction> getNightlifeArray(Context context) {
         final ArrayList<Attraction> nightlifeArray = new ArrayList<>();
+        String names[] = context.getResources().getStringArray(R.array.attr_name);
+        String categories[] = context.getResources().getStringArray(R.array.attr_category);
+        String addresses[] = context.getResources().getStringArray(R.array.attr_address);
+        String coordinates[] = context.getResources().getStringArray(R.array.attr_coordinates);
+        String phones[] = context.getResources().getStringArray(R.array.attr_phone);
+        String phoneLinks[] = context.getResources().getStringArray(R.array.attr_phone_link);
+        String website[] = context.getResources().getStringArray(R.array.attr_website);
+        String descriptions[] = context.getResources().getStringArray(R.array.attr_description);
+        String blurbs[] = context.getResources().getStringArray(R.array.attr_blurb);
 
-        // Get String array resources and assign to String to populate ArrayList
-        String names[] = context.getResources().getStringArray(R.array.attraction_name);
-        String categories[] = context.getResources().getStringArray(R.array.attraction_category);
-        String addresses[] = context.getResources().getStringArray(R.array.attraction_address);
-        String coordinates[] = context.getResources().getStringArray(R.array.attraction_coordinates);
-        String phones[] = context.getResources().getStringArray(R.array.attraction_phone);
-        String phoneLinks[] = context.getResources().getStringArray(R.array.attraction_phone_link);
-        String website[] = context.getResources().getStringArray(R.array.attraction_website);
-        String descriptions[] = context.getResources().getStringArray(R.array.attraction_description);
-        String blurbs[] = context.getResources().getStringArray(R.array.attraction_blurb);
+        TypedArray attrImages = context.getResources().obtainTypedArray(R.array.attr_images);
 
-        // Get array of image resource ids
-        TypedArray attractionImages = context.getResources().obtainTypedArray(R.array.attraction_images);
-
-        // Populate ArrayList from the string-arrays
         for (int i = 4; i < 9; i++) {
-            nightlifeArray.add(new Attraction(names[i], categories[i], addresses[i], coordinates[i],
-                    phones[i], phoneLinks[i], website[i], descriptions[i], blurbs[i],
-                    attractionImages.getResourceId(i, -1)));
+            nightlifeArray.add(new Attraction(names[i], categories[i], addresses[i], coordinates[i], phones[i], phoneLinks[i], website[i], descriptions[i], blurbs[i], attrImages.getResourceId(i, -1)));
         }
-
-        // Next, recycle TypedArray
-        attractionImages.recycle();
-
-        //Return the fully populated array
+        attrImages.recycle();
         return nightlifeArray;
     }
 
-    /**
-     * Returns a specific Attraction item from homePage category
-     *
-     * @return homePageAttraction an Attraction object from homePage category
-     */
     public Attraction getHomePageAttraction(Context context, int i) {
-
-        // Get String array resources and assign to String to populate ArrayList
-        String names[] = context.getResources().getStringArray(R.array.attraction_name);
-        String categories[] = context.getResources().getStringArray(R.array.attraction_category);
-        String addresses[] = context.getResources().getStringArray(R.array.attraction_address);
-        String coordinates[] = context.getResources().getStringArray(R.array.attraction_coordinates);
-        String phones[] = context.getResources().getStringArray(R.array.attraction_phone);
-        String phoneLinks[] = context.getResources().getStringArray(R.array.attraction_phone_link);
-        String website[] = context.getResources().getStringArray(R.array.attraction_website);
-        String descriptions[] = context.getResources().getStringArray(R.array.attraction_description);
-        String blurbs[] = context.getResources().getStringArray(R.array.attraction_blurb);
-
-        // Get array of image resource ids
-        TypedArray attractionImages = context.getResources().obtainTypedArray(R.array.attraction_images);
-
-        final Attraction homePageAttraction = new Attraction(names[i], categories[i], addresses[i], coordinates[i],
-                phones[i], phoneLinks[i], website[i], descriptions[i], blurbs[i],
-                attractionImages.getResourceId(i, -1));
-
-        // Next, recycle TypedArray
-        attractionImages.recycle();
-
-        //Return the Attraction item
+        String names[] = context.getResources().getStringArray(R.array.attr_name);
+        String categories[] = context.getResources().getStringArray(R.array.attr_category);
+        String addresses[] = context.getResources().getStringArray(R.array.attr_address);
+        String coordinates[] = context.getResources().getStringArray(R.array.attr_coordinates);
+        String phones[] = context.getResources().getStringArray(R.array.attr_phone);
+        String phoneLinks[] = context.getResources().getStringArray(R.array.attr_phone_link);
+        String website[] = context.getResources().getStringArray(R.array.attr_website);
+        String descriptions[] = context.getResources().getStringArray(R.array.attr_description);
+        String blurbs[] = context.getResources().getStringArray(R.array.attr_blurb);
+        TypedArray attrImages = context.getResources().obtainTypedArray(R.array.attr_images);
+        final Attraction homePageAttraction = new Attraction(names[i], categories[i], addresses[i], coordinates[i], phones[i], phoneLinks[i], website[i], descriptions[i], blurbs[i], attrImages.getResourceId(i, -1));
+        attrImages.recycle();
         return homePageAttraction;
     }
 
-    /**
-     * Returns a specific Attraction item from dining category
-     *
-     * @return diningAttraction an Attraction object from dining category
-     */
     public Attraction getDiningAttraction(Context context, int i) {
-
-        // Generate a new dining array but only retrieve the item at the specified position
-        // Return the dining attraction item
-
         return new Attraction().getDiningArray(context).get(i);
     }
 
-    /**
-     * Returns a specific Attraction item from shopping category
-     *
-     * @return shoppingAttraction an Attraction object from shopping category
-     */
     public Attraction getShoppingAttraction(Context context, int i) {
-
-        // Generate a new shopping array but only retrieve the item at the specified position
-        // Return the shopping attraction item
-
         return new Attraction().getShoppingArray(context).get(i);
     }
 
-    /**
-     * Returns a specific Attraction item from venues category
-     *
-     * @return venuesAttraction an Attraction object from venues category
-     */
     public Attraction getVenuesAttraction(Context context, int i) {
-
-        // Generate a new Venues array but only retrieve the item at the specified position
-        // Return the Venues attraction item
-
         return new Attraction().getVenuesArray(context).get(i);
     }
 
-    /**
-     * Returns a specific Attraction item from nightlife category
-     *
-     * @return nightlifeAttraction an Attraction object from nightlife category
-     */
     public Attraction getNightlifeAttraction(Context context, int i) {
-
-        // Generate a new Nightlife array but only retrieve the item at the specified position
-        // Return the Nightlife attraction item
-
         return new Attraction().getNightlifeArray(context).get(i);
     }
 
-    /**
-     * Returns a specific Attraction item from nightlife category
-     * Category codes: 0 - Home, 1 - Dining, 2 - Shopping, 3  Venues, 4 - Nightlife
-     *
-     * @return nightlifeAttraction an Attraction object from nightlife category
-     */
     public Attraction getDetailAttraction(Context context, int category, int index) {
         if (category == 0) {
-            // Home Page category. Get item at the specified position
             return getHomePageAttraction(context, index);
         } else if (category == 1) {
-            // Dining category. Get Dining item at the specified position
             return getDiningAttraction(context, index);
         } else if (category == 2) {
-            // Shopping category. Get Shopping item at the specified position
             return getShoppingAttraction(context, index);
         } else if (category == 3) {
-            // Venues category. Get Venues item at the specified position
             return getVenuesAttraction(context, index);
         } else {
-            // Nightlife category. Get Nightlife item at the specified position
             return getNightlifeAttraction(context, index);
         }
     }
 
-    /**
-     * Returns a string representation of an Attraction object.
-     * The {@code toString} method for class {@code Attraction}
-     *
-     * @return a string representation of the object.
-     */
     @Override
     public String toString() {
-
-        return "Attraction name is " + attractionName +
-                "\nAttraction Category is " + attractionCategory +
-                "\nAttraction Address is " + attractionAddress +
-                "\nAttraction Number is " + attractionPhoneNumberText +
-                "\nAttraction Website is " + attractionWebsite +
-                "\nAttraction Blurb is " + attractionBlurb +
-                "\nAttraction Description is " + attractionDescription;
+        return "Attraction name is " + attrName + "\nAttraction Category is " + attrCategory + "\nAttraction Address is " + attrAddress + "\nAttraction Number is " + attrPhoneNumberText + "\nAttraction Website is " + attrWebsite + "\nAttraction Blurb is " + attrBlurb + "\nAttraction Description is " + attrDescription;
     }
 }

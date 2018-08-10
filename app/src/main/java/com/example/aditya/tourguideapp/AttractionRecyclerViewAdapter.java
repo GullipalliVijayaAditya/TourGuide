@@ -1,101 +1,48 @@
 package com.example.aditya.tourguideapp;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.RecyclerView.Adapter;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class AttractionRecyclerViewAdapter extends RecyclerView
-        .Adapter<AttractionViewHolder> {
-
-    // Variable keeps track of context
+public class AttractionRecyclerViewAdapter extends RecyclerView.Adapter<AttractionViewHolder> {
     private Context context;
-
-    // Variable contains the resource ID for the item list layout
     private int resourceLayoutID;
+    private ArrayList<Attraction> attrsList;
+    private AttractionViewHolder.AttractionListener attrListener;
 
-    // ArrayList containing Attraction objects
-    private ArrayList<Attraction> attractionsList;
-
-    private AttractionViewHolder.AttractionListener attractionListener;
-
-    /**
-     * Custom constructor for AttractionRecyclerViewAdapter
-     *
-     * @param attractionData The ArrayList of Attraction objects
-     * @param resource       int that holds item list layout resource ID
-     * @param vContext       the context used to inflate the file
-     */
-    public AttractionRecyclerViewAdapter(ArrayList<Attraction> attractionData, int
-            resource, Context vContext, AttractionViewHolder.AttractionListener attractionListener) {
-
-        attractionsList = attractionData;
+    public AttractionRecyclerViewAdapter(ArrayList<Attraction> attrData, int resource, Context vContext, AttractionViewHolder.AttractionListener attrListener) {
+        attrsList = attrData;
         context = vContext;
         resourceLayoutID = resource;
-        this.attractionListener = attractionListener;
+        this.attrListener = attrListener;
         Log.v("RVAdaptor", "AttractionRecyclerViewAdapter constructor was called");
-
     }
 
-    /**
-     * onCreateViewHolder(ViewGroup, int) is called on to create a new RecyclerView.ViewHolder
-     * and initialize some private fields to be used by RecyclerView. (From Developer.Android.com)
-     *
-     * @param parent   The ViewGroup into which the new View will be added after it is bound to
-     *                 an adapter position.
-     * @param viewType The view type of the new View.
-     */
     @Override
     public AttractionViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        // create a new view
-        // Pass in int variable containing resource layout ID
         View view = LayoutInflater.from(parent.getContext()).inflate(resourceLayoutID, parent, false);
-
         Log.v("RVAdaptor", "OnCreateViewHolder was called");
-
-        return new AttractionViewHolder(view, context, attractionListener, this);
+        return new AttractionViewHolder(view, context, attrListener, this);
     }
 
-    /**
-     * Developer.Android.com: Called by RecyclerView to display the data at the specified position.
-     * This method will call the setItem method, which will update the contents of the itemView to
-     * reflect the item at the given position.
-     *
-     * @param holder   The ViewHolder which should be updated to represent the
-     *                 contents of the item at the given position in the data set.
-     * @param position The position of the item within the adapter's data set.
-     */
     @Override
     public void onBindViewHolder(final AttractionViewHolder holder, int position) {
-
         AttractionViewHolder viewHolder = (AttractionViewHolder) holder;
-        viewHolder.setItem(attractionsList.get(position));
+        viewHolder.setItem(attrsList.get(position));
         Log.v("RVAdaptor", "OnBindViewHolder was called");
-
     }
 
-    /**
-     * Method Returns the total number of items in the data set held by the adapter.
-     **/
     @Override
     public int getItemCount() {
-        return attractionsList.size();
+        return attrsList.size();
     }
 
-    /**
-     * Method used to update recyclerview based on new information
-     * @param position the position of the adapter that needs to be updated
-     **/
-    public void updateAttractionList(int position){
+    public void updateAttractionList(int position) {
         notifyItemChanged(position);
     }
 }
