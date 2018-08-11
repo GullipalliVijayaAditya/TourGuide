@@ -4,13 +4,13 @@
     <color name="colorPrimaryDark">#1300c1</color>
     <color name="colorAccent">#5441ff</color>
     <color name="primaryLightColor">#4f5b62</color>
+    <color name="secondaryTextColor">#0c0076</color>
+    <color name="default_background">#e4e8f4</color>
     <color name="secondaryColor">#3d11ff</color>
     <color name="secondaryLightColor">#3082fc</color>
     <color name="secondaryDarkColor">#a70c73</color>
     <color name="thirdLightColor">#74cfc0</color>
     <color name="primaryTextColor">#ffffff</color>
-    <color name="secondaryTextColor">#0c0076</color>
-    <color name="default_background">#e4e8f4</color>
     <color name="nightlife_background">#8ed5f7</color>
     <color name="grey">#dedddd</color>
 </resources>
