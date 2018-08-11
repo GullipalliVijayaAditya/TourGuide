@@ -12,8 +12,8 @@
     <android.support.v7.widget.Toolbar
         android:id="@+id/main_toolbar"
         style="@style/toolbar_style"
-        android:layout_width="74dp"
-        android:layout_height="86dp"
+        android:layout_width="@dimen/icon_row_width"
+        android:layout_height="@dimen/icon_row_height"
         android:minHeight="?attr/actionBarSize"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:logo="@drawable/logo"
@@ -32,12 +32,12 @@
             android:id="@+id/main_image_view"
             android:layout_width="match_parent"
             android:layout_height="@dimen/land_featured_image_height"
-            android:layout_marginTop="0dp"
-            android:contentDescription="@string/tab_image_content_description"
             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/zerodp"
+            android:background="@drawable/background_gradient"
+            android:contentDescription="@string/tab_image_content_description"
             android:scaleType="fitEnd"
-            android:background="@drawable/sidewalk"
-            android:visibility="visible"/>
+            android:visibility="visible" />
 
         <android.support.design.widget.TabLayout
             android:id="@+id/sliding_tabs"
@@ -48,16 +48,16 @@
             app:tabBackground="@color/colorPrimaryDark"
             app:tabGravity="fill"
             app:tabIndicatorColor="@color/secondaryLightColor"
-            app:tabIndicatorHeight="@dimen/tab_indicator_h"
-            app:tabMaxWidth="0dp"
+            app:tabIndicatorHeight="@dimen/tab_indicator_height"
+            app:tabMaxWidth="@dimen/zerodp"
             app:tabMode="scrollable"
-            app:tabSelectedTextColor="#ffffff"
+            app:tabSelectedTextColor="@android:color/white"
             app:tabTextColor="#A8A19E" />
 
         <android.support.v4.view.ViewPager
             android:id="@+id/viewpager"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="@dimen/zerodp"
             android:layout_weight="2"
             android:background="@color/default_background" />
     </LinearLayout>
@@ -68,9 +68,9 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/slogan_horizontal_margin"
         android:layout_marginRight="@dimen/slogan_horizontal_margin"
-        android:gravity="center_horizontal"
         android:layout_marginTop="@dimen/slogan_vertical_margin"
         android:fontFamily="cursive"
+        android:gravity="center_horizontal"
         android:textSize="@dimen/slogan_text_size"
         android:textStyle="bold"
         tools:text="@string/home_text" />

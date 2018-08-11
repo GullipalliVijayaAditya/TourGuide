@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements AttractionViewHol
     private static final int HOME = 0;
     private static final int DINING = 1;
     private static final int SHOPPING = 2;
-    private static final int VENUES = 3;
+    private static final int HISTORIC = 3;
     private static final int NIGHTLIFE = 4;
     private static final int DETAIL_SCREEN = 5;
     SharedPreferences sharedPreferences;
@@ -83,8 +83,8 @@ public class MainActivity extends AppCompatActivity implements AttractionViewHol
                     case SHOPPING:
                         sloganTextView.setText(R.string.shop_text);
                         break;
-                    case VENUES:
-                        sloganTextView.setText(R.string.venues_text);
+                    case HISTORIC:
+                        sloganTextView.setText(R.string.historic_text);
                         break;
                     case NIGHTLIFE:
                         sloganTextView.setText(R.string.nightlife_text);
@@ -279,8 +279,8 @@ public class MainActivity extends AppCompatActivity implements AttractionViewHol
                 Log.v("MainActivity", "Update to DINING themed views");
             } else if (category == SHOPPING) {
                 Log.v("MainActivity", "Update to SHOPPING themed views");
-            } else if (category == VENUES) {
-                Log.v("MainActivity", "Update to VENUES themed views");
+            } else if (category == HISTORIC) {
+                Log.v("MainActivity", "Update to HISTORIC themed views");
             } else {
                 Log.v("MainActivity", "Update to NIGHTLIFE themed views");
             }

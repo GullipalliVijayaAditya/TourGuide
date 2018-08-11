@@ -36,6 +36,15 @@ public class HomeFragment extends Fragment {
         Log.v("HomeFragment", "onResume running");
     }
 
+
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Log.v("HomeFragment", "onCreate running");
+        attr = new Attraction().getFullListArray(mContext);
+    }
+
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -44,13 +53,6 @@ public class HomeFragment extends Fragment {
         if (context instanceof AttractionViewHolder.AttractionListener) {
             listener = (AttractionViewHolder.AttractionListener) context;
         }
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        Log.v("HomeFragment", "onCreate running");
-        attr = new Attraction().getFullListArray(mContext);
     }
 
     @Override

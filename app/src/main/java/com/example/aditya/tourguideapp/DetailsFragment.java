@@ -2,15 +2,10 @@ package com.example.aditya.tourguideapp;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.content.res.Resources;
-import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.graphics.drawable.DrawableCompat;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,14 +13,12 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import static android.content.Context.MODE_PRIVATE;
 
 public class DetailsFragment extends Fragment {
 
 
-    SharedPreferences sharedPreferences;
     public static final String MY_PREFERENCES = "mypref";
     private static final String ATTRACTION_CATEGORY_KEY = "Home";
     private static final String ITEM_POSITION_KEY = "item_position_key";
@@ -35,26 +28,19 @@ public class DetailsFragment extends Fragment {
     private static final int SHOPPING = 2;
     private static final int VENUES = 3;
     private static final int NIGHTLIFE = 4;
+    SharedPreferences sharedPreferences;
+    TextView attrBlurb, attrDescription, attrName, attrAddress,
+            attrPhone, attrWebsite, moreInfoTextView;
+    LinearLayout moreInfoTable;
+    TextView callButton, webButton, mapsButton, shareButton, likeButton;
+    ImageView attrImage;
     private int mCategory = HOME;
     private int mPosition = 0;
     private Attraction currentAttraction;
     private boolean viewMoreInfo;
     private boolean isFavorite = false;
     private Context mContext;
-    TextView attrBlurb, attrDescription, attrName, attrAddress,
-            attrPhone, attrWebsite, moreInfoTextView;
-    LinearLayout moreInfoTable;
-    TextView callButton, webButton, mapsButton, shareButton, likeButton;
-    ImageView attrImage;
     private OnFragmentInteractionListener mListener;
-    public interface OnFragmentInteractionListener {
-        void onClickDetailsLikeButton(int category, int position, boolean isFavorite);
-        void onClickDetailsCallButton(int category, int position, String phoneLink);
-        void onClickDetailsWebButton(int category, int position, String website);
-        void onClickDetailsShareButton(int category, int position, String attrInfo);
-        void onClickDetailsMapButton(int category, int position, String geolocation);
-        void detachDetailScreen();
-    }
 
     public DetailsFragment() {
 
@@ -88,7 +74,6 @@ public class DetailsFragment extends Fragment {
         }
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -97,22 +82,22 @@ public class DetailsFragment extends Fragment {
         mapsButton = view.findViewById(R.id.map_button);
         callButton = view.findViewById(R.id.call_button);
         shareButton = view.findViewById(R.id.share_button);
-        moreInfoTextView = view.findViewById(R.id.more_info);
-        moreInfoTable = view.findViewById(R.id.more_info_table);
-        attrName = view.findViewById(R.id.attr_name);
         attrImage = view.findViewById(R.id.attr_image);
         attrPhone = view.findViewById(R.id.attr_phone);
         attrAddress = view.findViewById(R.id.attr_address);
+        moreInfoTextView = view.findViewById(R.id.more_info);
+        moreInfoTable = view.findViewById(R.id.more_info_table);
+        attrName = view.findViewById(R.id.attr_name);
         attrBlurb = view.findViewById(R.id.attr_snippet);
         attrDescription = view.findViewById(R.id.attr_description);
         attrWebsite = view.findViewById(R.id.attr_website_text);
         viewMoreInfo = false;
         moreInfoTable.setVisibility(View.GONE);
         attrImage.setImageResource(currentAttraction.getAttractionImageId());
-        attrAddress.setText(currentAttraction.getAttractionAddress());
         attrPhone.setText(currentAttraction.getAttractionPhoneNumberText());
         attrName.setText(currentAttraction.getAttractionName());
         attrBlurb.setText(currentAttraction.getAttractionBlurb());
+        attrAddress.setText(currentAttraction.getAttractionAddress());
         attrDescription.setText(currentAttraction.getAttractionDescription());
         attrWebsite.setText(currentAttraction.getAttractionWebsite());
         likeButton = view.findViewById(R.id.like_button);
@@ -224,5 +209,19 @@ public class DetailsFragment extends Fragment {
         super.onDetach();
         mListener.detachDetailScreen();
         mListener = null;
+    }
+
+    public interface OnFragmentInteractionListener {
+        void onClickDetailsLikeButton(int category, int position, boolean isFavorite);
+
+        void onClickDetailsCallButton(int category, int position, String phoneLink);
+
+        void onClickDetailsWebButton(int category, int position, String website);
+
+        void onClickDetailsShareButton(int category, int position, String attrInfo);
+
+        void onClickDetailsMapButton(int category, int position, String geolocation);
+
+        void detachDetailScreen();
     }
 }

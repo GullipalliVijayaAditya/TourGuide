@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="attr_images">
-        <item>@drawable/chops</item>
-        <item>@drawable/park_75</item>
-        <item>@drawable/ponce_city_market</item>
-        <item>@drawable/south_city</item>
-        <item>@drawable/clermont</item>
-        <item>@drawable/compound</item>
-        <item>@drawable/opera</item>
-        <item>@drawable/puff</item>
-        <item>@drawable/stk</item>
-        <item>@drawable/lenox</item>
-        <item>@drawable/phipps</item>
-        <item>@drawable/shops_buckhead</item>
-        <item>@drawable/fox</item>
-        <item>@drawable/mbs</item>
-        <item>@drawable/philips_arena</item>
-        <item>@drawable/suntrust_park</item>
+        <item>@drawable/aish</item>
+        <item>@drawable/agashiye</item>
+        <item>@drawable/bharawan_da_dhaba</item>
+        <item>@drawable/saravana_bhavan</item>
+        <item>@drawable/titos_club</item>
+        <item>@drawable/deltin_royale_casino</item>
+        <item>@drawable/shroom_nightclub</item>
+        <item>@drawable/blue_frog</item>
+        <item>@drawable/arpora_saturday_night_bazaar</item>
+        <item>@drawable/fashion_street</item>
+        <item>@drawable/colaba_causeway</item>
+        <item>@drawable/sarojini</item>
+        <item>@drawable/tajmahal</item>
+        <item>@drawable/qutubminar</item>
+        <item>@drawable/hawamahal</item>
+        <item>@drawable/charminar</item>
     </array>
 </resources>

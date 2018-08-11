@@ -5,10 +5,10 @@
     style="@style/Card_Vertical_One_Column"
     android:layout_width="@dimen/land_card_width"
     android:layout_height="@dimen/card_height_vertical_item_list"
+    android:layout_marginBottom="@dimen/card_margin_vertical_item_list"
     android:layout_marginLeft="@dimen/card_margin_vertical_item_list"
     android:layout_marginRight="@dimen/land_horizontal_item_list_margin_right"
     android:layout_marginTop="@dimen/vertical_item_list_narrow_margin"
-    android:layout_marginBottom="@dimen/card_margin_vertical_item_list"
     app:cardBackgroundColor="@android:color/white"
     app:cardCornerRadius="@dimen/card_radius_vertical_item_list"
     app:cardElevation="@dimen/card_elevation_vertical_item_list">
@@ -21,14 +21,14 @@
         <ImageView
             android:id="@+id/_image"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="@dimen/zerodp"
             android:layout_weight="1"
-            android:contentDescription="@string/image_content_description"
-            android:scaleType="centerCrop"
-            tools:src="@drawable/compound"
             android:clickable="true"
+            android:contentDescription="@string/image_content_description"
             android:focusable="true"
-            android:foreground="?android:attr/selectableItemBackground"/>
+            android:foreground="?android:attr/selectableItemBackground"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/aish" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -39,29 +39,29 @@
 
             <TextView
                 android:id="@+id/_name"
-                android:layout_width="0dp"
+                android:layout_width="@dimen/zerodp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="1"
-                tools:text="@string/attr_name_long_example"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:maxLines="1"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textStyle="bold"
-                android:clickable="true"
-                android:focusable="true"
-                android:maxLines="1"
-                android:ellipsize="end"
-                android:foreground="?android:attr/selectableItemBackground"/>
+                tools:text="@string/attr_name_long_example" />
 
             <ImageView
                 android:id="@+id/like_button"
                 android:layout_width="@dimen/like_icon_size"
                 android:layout_height="@dimen/like_icon_size"
                 android:layout_gravity="center_vertical"
-                android:contentDescription="@string/like_button_content_description"
-                android:src="@drawable/like"
                 android:clickable="true"
+                android:contentDescription="@string/like_button_content_description"
                 android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"/>
+                android:foreground="?android:attr/selectableItemBackground"
+                android:src="@drawable/like" />
         </LinearLayout>
 
         <TextView
@@ -72,13 +72,14 @@
             android:layout_marginLeft="@dimen/vertical_item_list_margin"
             android:layout_marginRight="@dimen/vertical_item_list_margin"
             android:layout_marginTop="@dimen/text_vertical_item_list_margin"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-            tools:text="@string/attr_description_example"
             android:clickable="true"
-            android:focusable="true"
-            android:maxLines="2"
             android:ellipsize="end"
-            android:justificationMode="inter_word" tools:targetApi="26"
-            android:foreground="?android:attr/selectableItemBackground"/>
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:justificationMode="inter_word"
+            android:maxLines="2"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            tools:targetApi="26"
+            tools:text="@string/attr_description_example" />
     </LinearLayout>
 </android.support.v7.widget.CardView>

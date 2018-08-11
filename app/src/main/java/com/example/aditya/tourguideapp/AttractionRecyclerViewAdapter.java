@@ -10,8 +10,8 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 
 public class AttractionRecyclerViewAdapter extends RecyclerView.Adapter<AttractionViewHolder> {
-    private Context context;
     private int resourceLayoutID;
+    private Context context;
     private ArrayList<Attraction> attrsList;
     private AttractionViewHolder.AttractionListener attrListener;
 
@@ -24,17 +24,17 @@ public class AttractionRecyclerViewAdapter extends RecyclerView.Adapter<Attracti
     }
 
     @Override
-    public AttractionViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(resourceLayoutID, parent, false);
-        Log.v("RVAdaptor", "OnCreateViewHolder was called");
-        return new AttractionViewHolder(view, context, attrListener, this);
-    }
-
-    @Override
     public void onBindViewHolder(final AttractionViewHolder holder, int position) {
         AttractionViewHolder viewHolder = (AttractionViewHolder) holder;
         viewHolder.setItem(attrsList.get(position));
         Log.v("RVAdaptor", "OnBindViewHolder was called");
+    }
+
+    @Override
+    public AttractionViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(resourceLayoutID, parent, false);
+        Log.v("RVAdaptor", "OnCreateViewHolder was called");
+        return new AttractionViewHolder(view, context, attrListener, this);
     }
 
     @Override

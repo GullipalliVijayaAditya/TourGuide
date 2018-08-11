@@ -29,12 +29,12 @@ public class AttractionViewHolder extends RecyclerView.ViewHolder implements Vie
         context = vContext;
         this.listener = listener;
         attrDescriptionTextView = v.findViewById(R.id.attr_snippet);
-        attrImageView = v.findViewById(R.id.attr_image);
-        attrNameTextView = v.findViewById(R.id.attr_name);
-        likeImageView = v.findViewById(R.id.like_button);
         attrDescriptionTextView.setOnClickListener(this);
+        attrImageView = v.findViewById(R.id.attr_image);
         attrImageView.setOnClickListener(this);
+        attrNameTextView = v.findViewById(R.id.attr_name);
         attrNameTextView.setOnClickListener(this);
+        likeImageView = v.findViewById(R.id.like_button);
         likeImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -70,11 +70,6 @@ public class AttractionViewHolder extends RecyclerView.ViewHolder implements Vie
         }
     }
 
-    public interface AttractionListener {
-        void onLikeButtonClicked(Attraction attrItem, int position, boolean wasLiked);
-        void onAttractionClicked(Attraction attrItem, int position, AttractionRecyclerViewAdapter adapter);
-    }
-
     public void setItem(Attraction item) {
         this.attrItem = item;
         attrNameTextView.setText(attrItem.getAttractionName());
@@ -95,6 +90,12 @@ public class AttractionViewHolder extends RecyclerView.ViewHolder implements Vie
             likeImageView.setTag(R.drawable.like);
             likeImageView.setImageResource(R.drawable.like);
         }
+    }
+
+    public interface AttractionListener {
+        void onLikeButtonClicked(Attraction attrItem, int position, boolean wasLiked);
+
+        void onAttractionClicked(Attraction attrItem, int position, AttractionRecyclerViewAdapter adapter);
     }
 
 

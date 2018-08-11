@@ -37,7 +37,7 @@ public class CategoryPagerAdapter extends FragmentPagerAdapter {
         } else if (position == 2) {
             return new ShoppingFragment();
         } else if (position == 3) {
-            return new VenuesFragment();
+            return new HistoricFragment();
         } else {
             return new NightlifeFragment();
         }
@@ -58,7 +58,7 @@ public class CategoryPagerAdapter extends FragmentPagerAdapter {
         } else if (position == 2) {
             return mContext.getString(R.string.shop_fragment);
         } else if (position == 3) {
-            return mContext.getString(R.string.venues_fragment);
+            return mContext.getString(R.string.historic_fragment);
         } else {
             return mContext.getString(R.string.nightlife_fragment);
         }

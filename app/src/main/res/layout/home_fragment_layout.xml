@@ -24,7 +24,7 @@
 
         <TextView
             style="@style/home_content_text"
-            android:text="@string/intro_description_text"/>
+            android:text="@string/intro_description_text" />
 
         <TextView
             android:id="@+id/featured_text"
@@ -46,6 +46,6 @@
 
         <TextView
             style="@style/home_content_text"
-            android:text="@string/disclaimer_text"/>
+            android:text="@string/disclaimer_text" />
     </LinearLayout>
 </ScrollView>

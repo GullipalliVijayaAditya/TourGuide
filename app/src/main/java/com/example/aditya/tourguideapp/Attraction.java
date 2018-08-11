@@ -58,6 +58,7 @@ public class Attraction {
     public void setAttractionCoordinates(String newAttractionCoordinates) {
         attrCoordinates = newAttractionCoordinates;
     }
+
     public String getAttractionAddress() {
         return attrAddress;
     }
@@ -154,14 +155,14 @@ public class Attraction {
 
     public ArrayList<Attraction> getShoppingArray(Context context) {
         final ArrayList<Attraction> shoppingArray = new ArrayList<>();
-        String names[] = context.getResources().getStringArray(R.array.attr_name);
-        String categories[] = context.getResources().getStringArray(R.array.attr_category);
         String addresses[] = context.getResources().getStringArray(R.array.attr_address);
         String coordinates[] = context.getResources().getStringArray(R.array.attr_coordinates);
         String phones[] = context.getResources().getStringArray(R.array.attr_phone);
         String phoneLinks[] = context.getResources().getStringArray(R.array.attr_phone_link);
         String website[] = context.getResources().getStringArray(R.array.attr_website);
         String descriptions[] = context.getResources().getStringArray(R.array.attr_description);
+        String names[] = context.getResources().getStringArray(R.array.attr_name);
+        String categories[] = context.getResources().getStringArray(R.array.attr_category);
         String blurbs[] = context.getResources().getStringArray(R.array.attr_blurb);
         TypedArray attrImages = context.getResources().obtainTypedArray(R.array.attr_images);
         for (int i = 9; i < 12; i++) {
@@ -171,8 +172,8 @@ public class Attraction {
         return shoppingArray;
     }
 
-    public ArrayList<Attraction> getVenuesArray(Context context) {
-        final ArrayList<Attraction> venuesArray = new ArrayList<>();
+    public ArrayList<Attraction> getHistoricArray(Context context) {
+        final ArrayList<Attraction> historicArray = new ArrayList<>();
         String names[] = context.getResources().getStringArray(R.array.attr_name);
         String categories[] = context.getResources().getStringArray(R.array.attr_category);
         String addresses[] = context.getResources().getStringArray(R.array.attr_address);
@@ -184,10 +185,10 @@ public class Attraction {
         String blurbs[] = context.getResources().getStringArray(R.array.attr_blurb);
         TypedArray attrImages = context.getResources().obtainTypedArray(R.array.attr_images);
         for (int i = 12; i < 16; i++) {
-            venuesArray.add(new Attraction(names[i], categories[i], addresses[i], coordinates[i], phones[i], phoneLinks[i], website[i], descriptions[i], blurbs[i], attrImages.getResourceId(i, -1)));
+            historicArray.add(new Attraction(names[i], categories[i], addresses[i], coordinates[i], phones[i], phoneLinks[i], website[i], descriptions[i], blurbs[i], attrImages.getResourceId(i, -1)));
         }
         attrImages.recycle();
-        return venuesArray;
+        return historicArray;
     }
 
     public ArrayList<Attraction> getNightlifeArray(Context context) {
@@ -213,6 +214,8 @@ public class Attraction {
 
     public Attraction getHomePageAttraction(Context context, int i) {
         String names[] = context.getResources().getStringArray(R.array.attr_name);
+        String blurbs[] = context.getResources().getStringArray(R.array.attr_blurb);
+        TypedArray attrImages = context.getResources().obtainTypedArray(R.array.attr_images);
         String categories[] = context.getResources().getStringArray(R.array.attr_category);
         String addresses[] = context.getResources().getStringArray(R.array.attr_address);
         String coordinates[] = context.getResources().getStringArray(R.array.attr_coordinates);
@@ -220,8 +223,6 @@ public class Attraction {
         String phoneLinks[] = context.getResources().getStringArray(R.array.attr_phone_link);
         String website[] = context.getResources().getStringArray(R.array.attr_website);
         String descriptions[] = context.getResources().getStringArray(R.array.attr_description);
-        String blurbs[] = context.getResources().getStringArray(R.array.attr_blurb);
-        TypedArray attrImages = context.getResources().obtainTypedArray(R.array.attr_images);
         final Attraction homePageAttraction = new Attraction(names[i], categories[i], addresses[i], coordinates[i], phones[i], phoneLinks[i], website[i], descriptions[i], blurbs[i], attrImages.getResourceId(i, -1));
         attrImages.recycle();
         return homePageAttraction;
@@ -235,8 +236,8 @@ public class Attraction {
         return new Attraction().getShoppingArray(context).get(i);
     }
 
-    public Attraction getVenuesAttraction(Context context, int i) {
-        return new Attraction().getVenuesArray(context).get(i);
+    public Attraction getHistoricAttraction(Context context, int i) {
+        return new Attraction().getHistoricArray(context).get(i);
     }
 
     public Attraction getNightlifeAttraction(Context context, int i) {
@@ -251,7 +252,7 @@ public class Attraction {
         } else if (category == 2) {
             return getShoppingAttraction(context, index);
         } else if (category == 3) {
-            return getVenuesAttraction(context, index);
+            return getHistoricAttraction(context, index);
         } else {
             return getNightlifeAttraction(context, index);
         }

@@ -14,17 +14,12 @@ import java.util.ArrayList;
 
 
 public class DiningFragment extends Fragment {
-
     static ArrayList<Attraction> attractions = new ArrayList<>();
-
     RecyclerView attractionRecyclerView;
-
     AttractionViewHolder.AttractionListener listener;
-
     Context mContext;
 
     public DiningFragment() {
-
     }
 
     public static DiningFragment newInstance() {
@@ -44,9 +39,7 @@ public class DiningFragment extends Fragment {
     public void onAttach(Context context) {
         super.onAttach(context);
         mContext = context;
-
         Log.v("DiningFragment", "onAttach running");
-
         if (context instanceof AttractionViewHolder.AttractionListener) {
             listener = (AttractionViewHolder.AttractionListener) context;
         }
@@ -55,38 +48,27 @@ public class DiningFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         Log.v("DiningFragment", "onCreate running");
-
         attractions = new Attraction().getDiningArray(mContext);
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_layout, container, false);
-
         Log.v("DiningFragment", "onCreateView running");
-
         attractionRecyclerView = view.findViewById(R.id.recycler_list);
         attractionRecyclerView.setHasFixedSize(true);
-
         LinearLayoutManager myLinearLayoutManager = new LinearLayoutManager(getActivity());
-
         boolean isLandscapeMode = getResources().getBoolean(R.bool.is_in_landscape_mode);
-
         if (isLandscapeMode) {
             myLinearLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
         } else {
             myLinearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         }
-
         if (attractions.size() > 0 & attractionRecyclerView != null) {
-            attractionRecyclerView.setAdapter(new AttractionRecyclerViewAdapter(attractions, R.layout
-                    .vertical_one_column_item_list, getActivity(), listener));
+            attractionRecyclerView.setAdapter(new AttractionRecyclerViewAdapter(attractions, R.layout.vertical_one_column_item_list, getActivity(), listener));
         }
         attractionRecyclerView.setLayoutManager(myLinearLayoutManager);
-
         return view;
     }
 

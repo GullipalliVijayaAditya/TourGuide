@@ -12,8 +12,9 @@
     <android.support.v7.widget.Toolbar
         android:id="@+id/main_toolbar"
         style="@style/toolbar_style"
-        android:layout_width="66dp"
-        android:layout_height="83dp"
+        android:layout_width="@dimen/icon_row_width"
+        android:layout_height="@dimen/icon_row_height"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:minHeight="?attr/actionBarSize"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
@@ -21,8 +22,7 @@
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:subtitleTextAppearance="@style/Base.TextAppearance.AppCompat.Medium"
         app:titleMarginBottom="@dimen/toolbar_margin_bottom"
-        app:titleTextAppearance="@style/Base.TextAppearance.AppCompat.Headline"
-        android:layout_alignParentLeft="true" />
+        app:titleTextAppearance="@style/Base.TextAppearance.AppCompat.Headline" />
 
     <LinearLayout
         android:id="@+id/main_tabs_layout"
@@ -33,13 +33,13 @@
         <ImageView
             android:id="@+id/main_image_view"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="0dp"
+            android:layout_height="@dimen/zerodp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="@dimen/zerodp"
             android:layout_weight="1"
-            android:background="@drawable/sidewalk"
+            android:background="@drawable/background_gradient"
             android:contentDescription="@string/tab_image_content_description"
-            android:scaleType="fitXY"
+            android:scaleType="fitEnd"
             android:src="@drawable/app_main"
             android:visibility="visible" />
 
@@ -52,16 +52,16 @@
             app:tabBackground="@color/colorPrimaryDark"
             app:tabGravity="fill"
             app:tabIndicatorColor="@color/secondaryLightColor"
-            app:tabIndicatorHeight="@dimen/tab_indicator_h"
-            app:tabMaxWidth="0dp"
+            app:tabIndicatorHeight="@dimen/tab_indicator_height"
+            app:tabMaxWidth="@dimen/zerodp"
             app:tabMode="scrollable"
-            app:tabSelectedTextColor="#ffffff"
+            app:tabSelectedTextColor="@android:color/white"
             app:tabTextColor="#A8A19E" />
 
         <android.support.v4.view.ViewPager
             android:id="@+id/viewpager"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="@dimen/zerodp"
             android:layout_weight="2"
             android:background="@color/default_background" />
     </LinearLayout>
@@ -73,10 +73,11 @@
         android:layout_marginLeft="@dimen/slogan_horizontal_margin"
         android:layout_marginRight="@dimen/slogan_horizontal_margin"
         android:layout_marginTop="@dimen/slogan_vertical_margin"
-        android:fontFamily="cursive" tools:targetApi="16"
+        android:fontFamily="cursive"
         android:gravity="center_horizontal"
         android:textSize="@dimen/slogan_text_size"
         android:textStyle="bold"
+        tools:targetApi="16"
         tools:text="@string/home_text" />
 
     <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"

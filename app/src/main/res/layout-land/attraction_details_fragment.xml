@@ -18,7 +18,7 @@
             android:layout_height="@dimen/land_details_feature_image"
             android:contentDescription="@string/image_content_description"
             android:scaleType="centerCrop"
-            tools:src="@drawable/compound" />
+            tools:src="@drawable/aish" />
 
         <TextView
             android:id="@+id/attr_name"
@@ -50,7 +50,7 @@
             android:paddingTop="@dimen/narrow_activity_margin"
             android:text="@string/more_info_link"
             android:textColor="@color/secondaryLightColor"
-            android:textIsSelectable="false"/>
+            android:textIsSelectable="false" />
 
         <LinearLayout
             android:id="@+id/more_info_table"
@@ -78,13 +78,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#ffffff">
+            android:background="@android:color/white">
 
             <TextView
                 android:id="@+id/call_button"
                 style="@style/detail_icon_row_black"
-                android:layout_width="0dp"
-                android:layout_height="40dp"
+                android:layout_width="@dimen/zerodp"
+                android:layout_height="@dimen/zerodp"
                 android:layout_weight="1"
                 android:clickable="true"
                 android:contentDescription="@string/call_icon"
@@ -96,7 +96,7 @@
             <TextView
                 android:id="@+id/web_button"
                 style="@style/detail_icon_row_black"
-                android:layout_width="0dp"
+                android:layout_width="@dimen/zerodp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:clickable="true"
@@ -109,7 +109,7 @@
             <TextView
                 android:id="@+id/map_button"
                 style="@style/detail_icon_row_black"
-                android:layout_width="0dp"
+                android:layout_width="@dimen/zerodp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:clickable="true"
@@ -122,7 +122,7 @@
             <TextView
                 android:id="@+id/share_button"
                 style="@style/detail_icon_row_black"
-                android:layout_width="0dp"
+                android:layout_width="@dimen/zerodp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:clickable="true"
@@ -135,7 +135,7 @@
             <TextView
                 android:id="@+id/like_button"
                 style="@style/detail_icon_row_black"
-                android:layout_width="0dp"
+                android:layout_width="@dimen/zerodp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:clickable="true"

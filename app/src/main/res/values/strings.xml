@@ -5,22 +5,18 @@
     <string name="featured_text">Featured Places</string>
     <string name="view_all_text">View All</string>
     <string name="intro_header_text">Celebrity Hang Outs</string>
-    <string name="intro_description_text">Explore the hottest celebrity hang out spots in the city of Atlanta. Before partaking in the fun, read the Important Information section below.</string>
-    <string name="disclaimer_text">These are only suggestions and we cannot guarantee that you
-        will encounter a celebrity at the listed locations. \n\nPlease remember to be polite and
-        respect the personal boundaries of others. In Atlanta, the norm is that celebrities are
-        able to be out in public without over the top reactions from fans and others. \n\nYou
-        are not authorized to use this app for the purpose of stalking and/ or harassing celebrities.</string>
-    <string name="disclaimer_header_text">Important Information</string>
-    <string name="home_text">Amazing India</string>
-    <string name="dine_text">where celebs eat</string>
-    <string name="shop_text">where celebs shop</string>
-    <string name="venues_text">where celebs play</string>
-    <string name="nightlife_text">where celebs party</string>
+    <string name="intro_description_text">India is a great country with a haven of tourism delights like wealth of sights, cultural exuberance, and diversity of terrain.</string>
+    <string name="disclaimer_text">India speaks for itself as a soul-stirring journey. From its dusty snow trenches, frolic coasts, gripping natural green to the mystic ravines of spirituality and clusters of cultural shades defining the raw beauty, India captures the heart of every tourist. Discover the different facets of this multicolored country as it shapes your vision at every of its fold. With the countrys tourism branched into several forms, India has a chunk for every kind of a traveler.</string>
+    <string name="disclaimer_header_text">More Information</string>
+    <string name="home_text">Incredible India</string>
+    <string name="dine_text">Lets go and have Delicious Food</string>
+    <string name="shop_text">Shop with Style</string>
+    <string name="historic_text">Historical places</string>
+    <string name="nightlife_text">Celebarte the life at night</string>
     <string name="dine_fragment">Dining</string>
     <string name="shop_fragment">Shopping</string>
-    <string name="venues_fragment">Venues</string>
-    <string name="venues_alternative">Sports &amp; Concert Venues</string>
+    <string name="historic_fragment">Historic</string>
+    <string name="Historic_alternative">Historic Places</string>
     <string name="nightlife_fragment">Nightlife</string>
     <string name="nightlife_alternative">Bars, Lounges &amp; Dance Clubs</string>
     <string name="image_content_description">Image of Attraction</string>
@@ -42,41 +38,35 @@
     <string name="web_icon">Web</string>
     <string name="map_icon">Map</string>
     <string name="like_icon">Save</string>
-    <string name="detail_blurb_header">Who You\'ll See</string>
-    <string name="detail_descrip_header">What You\'ll Find</string>
-    <string name="attr_name_short_example">Park 75</string>
-    <string name="attr_name_long_example">The Shops Buckhead Atlanta</string>
-    <string name="attr_address_multiline_example">70 West Paces Ferry Rd NW\nAtlanta, GA
-        30305</string>
-    <string name="attr_address_single_line_example">70 West Paces Ferry Rd NW, Atlanta, GA 30305</string>
+    <string name="detail_blurb_header">About</string>
+    <string name="detail_descrip_header">More Info</string>
+    <string name="attr_name_short_example">Aish</string>
+    <string name="attr_name_long_example">Arpora Saturday Night Bazaar</string>
+    <string name="attr_address_multiline_example">Somajiguda Lobby Level, The Park Opp Raily Station,     Necklace Rd, Somajiguda, Hyderabad, Telangana 500082</string>
+    <string name="attr_address_single_line_example">Somajiguda Lobby Level, Necklace Rd, Somajiguda, Hyderabad</string>
     <string name="attr_phone_example">(404) 262&#45;2675</string>
-    <string name="attr_description_example">You know what celebrities really love? Eating
-        crazy&#45;expensive cuts of steak! Because this tends to cut the&#8230;</string>
-    <string name="attr_detail_description_example">An Atlanta icon known for its exceptional food and service, Chops consistently ranks as one of the top ten steakhouses in the country. Exquisite seafood flown in fresh daily and the very best USDA prime aged beef are served with style in the warm ambiance of the dark wood dining room. Whether you’re dining for business or pleasure, a meal at Chops is sure to make a lasting impression. (Source: TripAdvisor.com)</string>
-    <string name="attr_detail_blurb_example">Visit Chops Lobster Bar and you might see Larry David, Russell Crowe, Justin Bieber, Billy Bob Thornton, Vin Diesel, Dennis Quaid, Kate Bosworth, or Ryan Gosling!</string>
-    <string name="three_dots">&#8230;</string>
+    <string name="attr_description_example">Courtly Andhran restaurant with royal     Nizam decor within a stylish high-end hotel.</string>
+    <string name="attr_detail_description_example">An ideal space to create unforgettable memories, The Park hotels\' signature style blends sophistication with local art and culture to create international chic. Redefining luxury, The Park\'s five star hotels in ten of India's most vibrant cities invite you to stay inspired.</string>
+    <string name="attr_detail_blurb_example">Now it\'s time to celebrate our legacy of great service and fun, and we invite you to join in for our year long festivities.</string>
+    <string name="three_dots">...</string>
 
-
-    <!-- Indices 0 through 3 are Dining Attractions; Indices 4 through 8 are Nightlife Attractions;
-    Indices 9 through 11 are Shopping Attractions; and Indices 12 through 15 are Venue Attractions
-    -->
     <string-array name="attr_name">
-        <item>Chops Lobster Bar</item>
-        <item>Park 75</item>
-        <item>Ponce City Market</item>
-        <item>South City Kitchen</item>
-        <item>Clermont Lounge</item>
-        <item>Compound</item>
-        <item>Opera Nightclub</item>
-        <item>Puff &amp; Petals</item>
-        <item>STK Atlanta</item>
-        <item>Lenox Square</item>
-        <item>Phipps Plaza</item>
-        <item>The Shops Buckhead Atlanta</item>
-        <item>Fox Theatre</item>
-        <item>Mercedes Benz Stadium</item>
-        <item>Philips Arena</item>
-        <item>SunTrust Park</item>
+        <item>AISH</item>
+        <item>AGASHIYE</item>
+        <item>BHARAWAN DA DHABA</item>
+        <item>HOTEL SARAVANA BHAVAN</item>
+        <item>Tito’s Club</item>
+        <item>Deltin Royale Casino</item>
+        <item>Shroom Nightclub</item>
+        <item>The Blue Frog</item>
+        <item>Arpora Saturday Night Bazaar</item>
+        <item>Fashion Street</item>
+        <item>Colaba Causeway</item>
+        <item>Sarojini</item>
+        <item>Taj Mahal</item>
+        <item>Qutub Minar</item>
+        <item>Hawa Mahal</item>
+        <item>Charminar</item>
     </string-array>
 
     <string-array name="attr_category">
@@ -92,179 +82,161 @@
         <item>Shopping</item>
         <item>Shopping</item>
         <item>Shopping</item>
-        <item>Venues</item>
-        <item>Venues</item>
-        <item>Venues</item>
-        <item>Venues</item>
+        <item>Historic</item>
+        <item>Historic</item>
+        <item>Historic</item>
+        <item>Historic</item>
     </string-array>
 
     <string-array name="attr_address_multi">
-        <item>70 West Paces Ferry Rd NW\nAtlanta, GA 30305</item>
-        <item>75 14th St NE\nAtlanta, GA 30309</item>
-        <item>675 Ponce De Leon Ave NE\nAtlanta, GA 30308</item>
-        <item>1144 Crescent Ave NE\nAtlanta, GA 30309</item>
-        <item>789 Ponce De Leon Ave NE\nAtlanta, GA 30306</item>
-        <item>1008 Brady Ave NW\nAtlanta, GA 30318</item>
-        <item>1150 Crescent Ave NE\nSuite B\nAtlanta, GA 30309</item>
-        <item>367 Edgewood Ave SE\nAtlanta, GA 30312</item>
-        <item>1075 Peachtree St NE\nAtlanta, GA 30309</item>
-        <item>3393 Peachtree Rd NE\nAtlanta, GA 30326</item>
-        <item>3500 Peachtree Rd NE\nAtlanta, GA 30326</item>
-        <item>3035 Peachtree Rd NE\nAtlanta, GA 30305</item>
-        <item>660 Peachtree St NE\nAtlanta, GA 30308</item>
-        <item>1 AMB Drive NW\nAtlanta, GA 30313</item>
-        <item>1 Philips Dr\nAtlanta, GA 30303</item>
-        <item>755 Battery Ave SE\nAtlanta, GA 30339</item>
+        <item>Somajiguda Lobby Level, The Park Opp Raily Station,, Necklace Rd, Somajiguda, Hyderabad, Telangana 500082</item>
+        <item>Bhadra Road, Opp. Sidi Saiyad Jali, Lal Darwaja, Ahmedabad, Gujarat 380001</item>
+        <item>Near Town Hall, Amritsar, Punjab 143001</item>
+        <item>21, Kenneth Ln, Egmore, Chennai, Tamil Nadu 600008</item>
+        <item>Titos Ln, Saunta Vaddo, Goa, 403516</item>
+        <item>Noah's Ark, RND Jetty, Dayanand Bandodkar Road, Panaji, Goa 403001</item>
+        <item>Third Floor, The Crescent Mall, Lado Sarai, Mehrauli, New Delhi, Delhi 110030</item>
+        <item>No. 3, MSR West Park, Church Street, Ashok Nagar, Bengaluru, Karnataka 560001</item>
+        <item>Arpora, Goa 403519</item>
+        <item>Mahatma Gandhi Road, Marine Lines, Mumbai, Maharashtra 400020</item>
+        <item>Bakery Ln, Army Area, Nofra, Navy Nagar, Colaba, Mumbai, Maharashtra 400005</item>
+        <item>Sarojini Nagar, New Delhi, Delhi 110023</item>
+        <item>Dharmapuri, Forest Colony, Tajganj, Agra, Uttar Pradesh 282001</item>
+        <item>Mehrauli, New Delhi, Delhi 110030</item>
+        <item>Hawa Mahal Rd, Badi Choupad, J.D.A. Market, Kanwar Nagar, Jaipur, Rajasthan 302002</item>
+        <item>Char Kaman, Ghansi Bazaar, Hyderabad, Telangana 500002</item>
     </string-array>
 
     <string-array name="attr_address">
-        <item>70 West Paces Ferry Rd NW, Atlanta, GA</item>
-        <item>75 14th St NE, Atlanta, GA</item>
-        <item>675 Ponce De Leon Ave NE, Atlanta, GA</item>
-        <item>1144 Crescent Ave NE, Atlanta, GA </item>
-        <item>789 Ponce De Leon Ave NE, Atlanta, GA</item>
-        <item>1008 Brady Ave NW, Atlanta, GA </item>
-        <item>1150 Crescent Ave NE, Suite B, Atlanta, GA</item>
-        <item>367 Edgewood Ave SE, Atlanta, GA </item>
-        <item>1075 Peachtree St NE, Atlanta, GA</item>
-        <item>3393 Peachtree Rd NE, Atlanta, GA</item>
-        <item>3500 Peachtree Rd NE, Atlanta, GA</item>
-        <item>3035 Peachtree Rd NE, Atlanta, GA</item>
-        <item>660 Peachtree St NE, Atlanta, GA</item>
-        <item>1 AMB Drive NW, Atlanta, GA</item>
-        <item>1 Philips Dr, Atlanta, GA</item>
-        <item>755 Battery Ave SE, Atlanta, GA</item>
+        <item>Somajiguda Lobby Level, The Park Opp Raily Station, Necklace Rd, Somajiguda, Hyderabad, Telangana</item>
+        <item>Bhadra Road, Opp. Sidi Saiyad Jali, Lal Darwaja, Ahmedabad, Gujarat</item>
+        <item>Near Town Hall, Amritsar, Punjab</item>
+        <item>21, Kenneth Ln, Egmore, Chennai, Tamil Nadu</item>
+        <item>Titos Ln, Saunta Vaddo, Goa</item>
+        <item>Noah's Ark, RND Jetty, Dayanand Bandodkar Road, Panaji, Goa</item>
+        <item>Third Floor, The Crescent Mall, Lado Sarai, Mehrauli, New Delhi, Delhi</item>
+        <item>No. 3, MSR West Park, Church Street, Ashok Nagar, Bengaluru, Karnataka</item>
+        <item>Arpora, Goa</item>
+        <item>Mahatma Gandhi Road, Marine Lines, Mumbai, Maharashtra</item>
+        <item>Bakery Ln, Army Area, Nofra, Navy Nagar, Colaba, Mumbai, Maharashtra</item>
+        <item>Sarojini Nagar, New Delhi, Delhi</item>
+        <item>Dharmapuri, Forest Colony, Tajganj, Agra, Uttar Pradesh</item>
+        <item>Mehrauli, New Delhi, Delhi</item>
+        <item>Hawa Mahal Rd, Badi Choupad, J.D.A. Market, Kanwar Nagar, Jaipur, Rajasthan</item>
+        <item>Char Kaman, Ghansi Bazaar, Hyderabad, Telangana</item>
     </string-array>
 
     <string-array name="attr_coordinates">
-        <item>geo:0,0?q=33.84,-84.38144(Chops Lobster Bar)</item>
-        <item>geo:0,0?q=33.78616,-84.38529(Park 75)</item>
-        <item>geo:0,0?q=33.77222,-84.36607(Ponce City Market)</item>
-        <item>geo:0,0?q=33.786,-84.38456(South City Kitchen)</item>
-        <item>geo:0,0?q=33.77336,-84.36135(Clermont Lounge)</item>
-        <item>geo:0,0?q=33.78423,-84.41389(Compound)</item>
-        <item>geo:0,0?q=33.786,-84.38456(Opera Nightclub)</item>
-        <item>geo:0,0?q=33.75428,-84.37655(Puff &amp; Petals)</item>
-        <item>geo:0,0?q=33.78381,-84.38317(STK Atlanta)</item>
-        <item>geo:0,0?q=33.84773,-84.36225(Lenox Square)</item>
-        <item>geo:0,0?q=33.85296,-84.36042(Phipps Plaza)</item>
-        <item>geo:0,0?q=33.83874,-84.36671(The Shops Buckhead Atlanta)</item>
-        <item>geo:0,0?q=33.77261,-84.38559(Fox Theatre)</item>
-        <item>geo:0,0?q=33.75637,-84.40115(Mercedes Benz Stadium)</item>
-        <item>geo:0,0?q=33.75738,-84.39347(Philips Arena)</item>
-        <item>geo:0,0?q=33.88363,-84.47554(SunTrust Park)</item>
+        <item>geo:0,0?q=17.4236,78.4620(The Park)</item>
+        <item>geo:0,0?q=23.0270,72.5815(Agashiye)</item>
+        <item>geo:0,0?q=31.6259,74.8777(Bharawan Da Dhaba)</item>
+        <item>geo:0,0?q=23.0270,72.5815(Saravana bhavan)</item>
+        <item>geo:0,0?q=15.5563,73.7532(Tito’s club)</item>
+        <item>geo:0,0?q=15.5006,73.8313(Deltin royale casino)</item>
+        <item>geo:0,0?q=28.5246,77.1908(Shroom nightclub)</item>
+        <item>geo:0,0?q=12.9744,77.6068(Blue frog)</item>
+        <item>geo:0,0?q=15.5768,73.7617(arpora)</item>
+        <item>geo:0,0?q=18.9389,72.8301(fashion street)</item>
+        <item>geo:0,0?q=18.9172,72.8286(Colaba Causeway Market)</item>
+        <item>geo:0,0?q=28.5773,77.1963(Sarojini)</item>
+        <item>geo:0,0?q=27.1750,78.0422(Taj Mahal)</item>
+        <item>geo:0,0?q=28.5244,77.1855(Qutb Minar)</item>
+        <item>geo:0,0?q=26.9239,75.8267(Hawa Mahal)</item>
+        <item>geo:0,0?q=17.3616,78.4747(Charminar)</item>
     </string-array>
 
     <string-array name="attr_phone">
-        <item>(404) 262&#45;2675</item>
-        <item>(404) 253&#45;3840</item>
-        <item>(404) 900&#45;7900</item>
-        <item>(404) 873&#45;7358</item>
-        <item>(404) 874&#45;4783</item>
-        <item>(404) 898&#45;1702</item>
-        <item>(404) 874&#45;3006</item>
-        <item>(404) 555&#45;1212</item>
-        <item>(404) 793&#45;0144</item>
-        <item>(404) 233&#45;7575</item>
-        <item>(404) 261&#45;7910</item>
-        <item>(404) 939&#45;9270 </item>
-        <item>(404) 881&#45;2100</item>
-        <item>(470) 341&#45;5000</item>
-        <item>(404) 878&#45;3000</item>
-        <item>(404) 577&#45;9100</item>
+        <item>040-23456789</item>
+        <item>079-25506946</item>
+        <item>183-2532575</item>
+        <item>044-28192055</item>
+        <item>9822765002</item>
+        <item>9819698196</item>
+        <item>9624054444</item>
+        <item>7411099549</item>
+        <item>09922100001</item>
+        <item>09647484838</item>
+        <item>08234575556</item>
+        <item>07464849475</item>
+        <item>09277768876</item>
+        <item>08567677767</item>
+        <item>09454565556</item>
+        <item>09756776769</item>
     </string-array>
 
     <string-array name="attr_phone_link">
-        <item>tel:14042622675</item>
-        <item>tel:14042533840</item>
-        <item>tel:14049007900</item>
-        <item>tel:14048737358</item>
-        <item>tel:14048744783</item>
-        <item>tel:14048981702</item>
-        <item>tel:14048743006</item>
-        <item>tel:14045551212</item>
-        <item>tel:14047930144</item>
-        <item>tel:14042337575</item>
-        <item>tel:14042617910</item>
-        <item>tel:14049399270</item>
-        <item>tel:14048812100</item>
-        <item>tel:14703415000</item>
-        <item>tel:14048783000</item>
-        <item>tel:14045779100</item>
+        <item>tel:04023456789</item>
+        <item>tel:07925506946</item>
+        <item>tel:1832532575</item>
+        <item>tel:04428192055</item>
+        <item>tel:09822765002</item>
+        <item>tel:09819698196</item>
+        <item>tel:09624054444</item>
+        <item>tel:07411099549</item>
+        <item>tel:09922100001</item>
+        <item>tel:09647484838</item>
+        <item>tel:08234575556</item>
+        <item>tel:07464849475</item>
+        <item>tel:09277768876</item>
+        <item>tel:08567677767</item>
+        <item>tel:09454565556</item>
+        <item>tel:09756776769</item>
     </string-array>
 
     <string-array name="attr_website">
-        <item>www.buckheadrestaurants.com/chops-lobster-bar</item>
-        <item>www.fourseasons.com/atlanta/dining/restaurants/park_75</item>
-        <item>www.poncecitymarket.com</item>
-        <item>midtown.southcitykitchen.com</item>
-        <item>clermontlounge.net</item>
-        <item>www.compoundatl.com</item>
-        <item>www.operaatlanta.com</item>
-        <item>instagram.com/puffandpetalslounge</item>
-        <item>togrp.com/venue/stk-atlanta</item>
-        <item>www.simon.com/mall/lenox-square</item>
-        <item>www.simon.com/mall/phipps-plaza</item>
-        <item>theshopsbuckheadatlanta.com</item>
-        <item>www.foxtheatre.org</item>
-        <item>mercedesbenzstadium.com</item>
-        <item>www.philipsarena.com</item>
-        <item>mlb.mlb.com/atl/ballpark/information</item>
+        <item>www.theparkhotels.com/hyderabad.html</item>
+        <item>www.houseofmg.com</item>
+        <item>www.tripadvisor.in/Restaurant_Review-g303884-d2322746-Reviews-Bharawan_Da_Dhaba-Amritsar_Amritsar_District_Punjab.html</item>
+        <item>www.saravanabhavan.com/</item>
+        <item>titosgoa.com/</item>
+        <item>www.deltin.com</item>
+        <item>shroom.co.in</item>
+        <item>bengalurubluefrog.club</item>
+        <item>www.snmgoa.com</item>
+        <item>www.tripadvisor.in/Attraction_Review-g304554-d2443565-Reviews-Fashion_Street-Mumbai_Maharashtra.html</item>
+        <item>www.tripadvisor.in/Attraction_Review-g304554-d6570937-Reviews-Colaba_Causeway_Market-Mumbai_Maharashtra.html</item>
+        <item>www.justdial.com/Delhi/Paul-Shoes-Main-Market-Sarojini-Nagar-Market/011PXX11-XX11-001018446943-X2K3_BZDET</item>
+        <item>www.tajmahal.gov.in/</item>
+        <item>www.delhitourism.gov.in/delhitourism/tourist_place/qutab_minar.jsp</item>
+        <item>en.wikipedia.org/wiki/Hawa_Mahal</item>
+        <item>www.telanganatourism.gov.in/partials/destinations/heritage-spots/hyderabad/charminar.html</item>
     </string-array>
 
-    <!--Attraction descriptions were obtained through various online resources, including Google
-    Maps, Wikipedia, Atlanta.net, TripAdvisor.com, Thrillist.com, and various travel articles and
-    magazines. Specific attributions contained within strings.-->
     <string-array name="attr_description">
-        <item>An Atlanta icon known for its exceptional food and service, Chops consistently ranks as one of the top ten steakhouses in the country. Exquisite seafood flown in fresh daily and the very best USDA prime aged beef are served with style in the warm ambiance of the dark wood dining room. Whether you’re dining for business or pleasure, a meal at Chops is sure to make a lasting impression. \n\n(Source: TripAdvisor.com, Thrillist.com)</item>
-        <item>Park 75 is steps away from the lobby where a famed face is bound to show itself during check out, only know that the tight&#45;lipped staff won\’t be able to share. \n\n\"Park 75 Restaurant at Four Seasons Hotel Atlanta offers the freshest seasonal ingredients in a variety of breakfast specialties including Brioche French Toast, Red Velvet Pancakes, and Egg White Frittata. Join us during the week or on Sunday for our specialized brunch menu and buffet.\" \n\n(Source: Park 75, Atlanta.net)</item>
-        <item>At the heart of Ponce City Market, the Central Food Hall is becoming the most vibrant food hall and market in the Southeast. Located at the intersection of the Virginia Highland, Old Fourth Ward, Midtown, and Poncey&#45;Highland neighborhoods, Ponce City Market is the epicenter for shopping, dining, and gathering among local residents. The venue spans over two million feet. This historic building is home to retail stores, restaurants, offices, venues, and residence alike. At the heart of Ponce City Market, the Central Food Hall is becoming the most vibrant food hall and market in the Southeast. James Beard Award&#45;winning chefs the likes of Anne Quatrano, Linton Hopkins, and Sean Brock join Atlanta’s most exciting young purveyors and restaurateurs to offer everything from Georgia and Carolinas&#45;caught seafood, to classic burgers, cold&#45;pressed juice, and locally&#45;made kimchee and Korean steamed buns. \n\nSimilar to the legendary food hall at Chelsea Market in Manhattan—also owned by the developers of Ponce City Market—the Central Food Hall is a culinary gathering place within a revamped historic space, but with the distinct character and ﬂavors of Atlanta. \n\n(Source: Ponce City Market, Atlanta.net)</item>
-        <item>Hollywood is moving to ATL not just because of the tax breaks; the South also has
-            way better shrimp and grits than you can find in Beverly Hills. Set in a 1920s
-            bungalow, this eatery offers inventive takes on Southern favorites plus a fireplace.
-            South City Kitchen Midtown serves Southern classics with a sophisticated spin from an
-            iconic bungalow in the heart of Midtown Atlanta. \n\n<i>According to restaurant
-                management, \"Since opening more than two decades ago and changing the landscape
-                of Southern cuisine and the Atlanta restaurant scene, we’ve been serving signature dishes like fried chicken and shrimp &amp; grits alongside innovative, inspired regional cuisine.\" \n\n\"Our nationally&#45;recognized food and wine list and service come together seamlessly for weekday lunch, weekend brunch, nightly dinner and group dining events.\"</i> \n\n(Source: South City Kitchen, Thrillist.com)</item>
-        <item>The Clermont Lounge is Atlanta\'s first and longest continually operating strip
-            club, opened in 1965. Some of the biggest Hollywood A&#45;listers have gone to the Clermont Lounge. In fact, Jennifer Lawrence, Morgan Freeman, and Lady Gaga all went to the strip club/dive bar while they were visiting Atlanta. Basically, every celebrity who visits Atlanta goes to the Clermont Lounge. This is a must for anyone looking to bump shoulders with Hollywood elite. \n\n(Source: ProjectCasting.com, Thrillist.com)</item>
-        <item>Head to Compound in downtown Atlanta for a night of fun and entertainment. The nightclub is not only one of the most popular places to party in the city; it is also one of the most famed spots to indulge in a night of hip&#45;hop music. After a brief hiatus in 2008, the club reopened in 2009 to the delight of locals. This dual&#45;level club features a variety of rooms, including a white&#45;drenched dance hall complete with open VIP levels. DJs spin at hip bi&#45;level dance club with indoor/outdoor spaces &amp; VIP area. You must be at least 21 years to join the party. \n\n(Source: AZCentral.com; Compound Atlanta\'s Instagram)</item>
-        <item>Opera Nightclub is a nightclub located in Midtown Atlanta, Georgia, United States. It is Atlanta\'s most popular and successful nightclub in terms of revenue and attendance and has also been featured in Nightclub &amp; Bar\'s Top 50 Clubs in the United States for 2015. \n\n(Source: Wikipedia)</item>
-        <item>Cocktails, sweets, and southern small bites served in a brightly colored, femme&#45;focused lounge setting. R&amp;B singer, songwriter, pianist and guitarist K.
-            Michelle, Kimberly Michelle Pate, has topped Billboard charts and frequently starred on \"Love &amp; Hip Hop: Atlanta.\" Her newest title, restaurateur, came when she opened Puff &amp; Petals in May. \n\nWhile the lounge\'s decorative scheme might sound visually overwhelming, K pulls it off with subtle taste. Chandeliers hang above and sheer pink curtains dangle between pink vinyl booths and white countertops. The salt at each table is pink. Framed playful quotes cover the back wall, like \"She who leaves a trail of glitter is never forgotten\" and \"Never chase anything but drinks and dreams.\" To the right of the narrow space sits the bar, set against a backdrop of artificial pastel orange, green and pink roses and hydrangeas. \"The whole theme is really girly,\" K says. \"I just wanted Puff &amp; Petals to be a place where women can feel safe and comfortable and have great drinks.\" \n\n(Source: Bobbin Wages, Creative Loafing; Puff and Petals Instagram)</item>
-        <item>Perhaps it\’s the amazing food, the lively ambiance or the 5,000&#45;square&#45;foot private event space that entices celebrities like Denzel Washington, Scarlett Johansson and Chris Evans to stop by STK Atlanta. This dining venue offers a lively and chic lounge along with modern eats, making it the perfect spot to hang with celebs and have a night out with your own glitterati group. \n\n(Source: Rachel Madray, ModernLuxury.com; Thrillist.com)</item>
-        <item>Not only are Lenox Square Mall and Phipps Plaza the most fashionable locations in Atlanta, they also boast some of the best celeb sightings. Located in the heart of Buckhead, Lenox Square offers an unparalleled shopping experience. The property boasts Bloomingdale\'s, Neiman Marcus and Macy\'s and features nearly 250 specialty stores like FENDI, Burberry, Cartier, David Yurman, Louis Vuitton, Diane von Furstenberg, and Vineyard Vines. \n\nBut that\'s not it! An impressive 2&#45;story glass facade welcomes shoppers to 3 full service restaurants: The Cheesecake Factory, Zinburger Wine &amp; Burger Bar, and True Food Kitchen. This dramatic entrance showcases the iconic property\’s street side presence, including a glass covered porte&#45;cochere and valet amenities for easy access. \n\n(Source: Simon Property Group, Atlanta.net)</item>
-        <item>Phipps Plaza, the southeast\'s premier, upscale shopping destination, is located off of GA 400 at the intersection of Peachtree and Lenox Roads, right in the heart of Buckhead with quick and convenient access to Midtown and Downtown Atlanta. According to Simon Property Group, \"Our beautiful indoor shopping mall boasts over 100 stores like Saks Fifth Avenue, Nordstrom, Jeffrey Atlanta, Tiffany &amp; Co., Gucci and more. In addition to our variety of shopping categories, Phipps Plaza offers exciting entertainment options, with a 14&#45;screen AMC movie theatre and LEGOLAND Discovery Center attr.\"  \n\nWhen you\'re done shopping, hang around, because Phipps Plaza has full&#45;service restaurant and dining options like Public Kitchen &amp; Bar, Genuine Pizza, Davio\'s Northern Italian Steakhouse and The Tavern at Phipps, as well as fast options such as Johnny Rockets, Moe\'s Southwest Grill, Subway and Rocks Chicken &amp; Fries, all of which are sure to satisfy any appetite. \n\n(Source: Simon Property Group)</item>
-        <item>Big city chic and European charm blend seamlessly at The Shops Buckhead Atlanta. Bistro tables on canopied sidewalks beckon. Window&#45;shopping is a coveted pastime. Over 60 designer stores and unique restaurants with new openings happening all the time. A walkable city sanctuary where art, style and ambiance converge. \n\n(Source: The Shops Buckhead, Atlanta.net)</item>
-        <item>The Fox Theatre, a former movie palace, is a performing arts venue located in Midtown Atlanta, Georgia, and is the centerpiece of the Fox Theatre Historic District. The theater was originally planned as part of a large Shrine Temple as evidenced by its Moorish design. The 4,665 seat auditorium was ultimately developed as a lavish movie theater in the Fox Theatres chain and opened in 1929. It hosts a variety of cultural and artistic events including the Atlanta Ballet, a summer film series, and performances by national touring companies of Broadway shows. The venue also hosts occasional concerts by popular artists. \n\n(Source: Wikipedia)</item>
-        <item>Mercedes&#45;Benz stadium is the new home of the Atlanta Falcons of the National Football League (NFL) and the Atlanta United FC of Major League Soccer (MLS). It replaced the adjacent NFL indoor arena Georgia Dome (now demolished), the Falcons\' home stadium from 1992 through 2016. With a cost of nearly 1.5 billion dollars, the Mercedes&#45;Benz stadium holds the record of the world\'s largest halo board and is one of few football stadiums with retractable roofs. \n\n(Source: Wikipedia)</item>
-        <item>Philips Arena is a multi&#45;purpose indoor arena located in Atlanta, Georgia, and is home to the Atlanta Hawks, of the National Basketball Association, and the Atlanta Dream, of the Women\'s National Basketball Association. \n\n(Source: Wikipedia)</item>
-        <item>SunTrust Park is a baseball park located in the Atlanta metropolitan area 10 miles (16 km) northwest of downtown Atlanta in the unincorporated community of Cumberland, in Cobb County, Georgia. It is the home ballpark for the Atlanta Braves, the city\'s Major League Baseball (MLB) franchise. On November 11, 2013, the Braves announced (quite controversially) that the franchise would leave Turner Field for a new park after the 2016 season. The Braves have played their home games at SunTrust Park since April 2017. \n\n(Source: Wikipedia)</item>
+        <item>Courtly Andhran restaurant with royal Nizam decor within a stylish high-end hotel.</item>
+        <item>Terrace restaurant at a 1920s hotel serving traditional Gujarati dishes and thalis.</item>
+        <item>Best punjabi food</item>
+        <item>Long-running international chain serving up South Indian vegetarian dishes, including dosas.</item>
+        <item>Typical nightspot offering a variety of cocktails and beer, plus DJ music and dancing.</item>
+        <item>Lively offshore casino offering numerous games and tournaments, live entertainment and dining.</item>
+        <item>State-of-the-art nightclub known for top DJs and out-of-the-ordinary, edible cocktails.</item>
+        <item>State-of-the-art nightspot with a regular line-up of DJs hosting party evenings and a global menu</item>
+        <item>Energetic open-air night market known for its array of goods and food stalls, plus cocktails and DJs.</item>
+        <item>Fashion Street refers to a cluster of over 385 street side clothing shops on MG Road near Azad Maidan and is opposite to Bombay Gymkhana, in South Mumbai, India. The market is located just opposite VSNL office building at Mahatma Gandhi Road</item>
+        <item>Colaba Causeway, a street side shopping destination of South ... Causeway market is heaven for book readers, find almost any book of any author you like.</item>
+        <item>At the Sarojini Nagar Market you get fashionable clothes at affordable prices.</item>
+        <item>The Taj Mahal is an ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor, Shah Jahan, to house the tomb of his favourite wife, Mumtaz Mahal.</item>
+        <item>The Qutub Minar, also spelled as Qutab Minar, or Qutb Minar, is the tallest minaret in the world made up of bricks. The minaret forms a part of the Qutab complex, a UNESCO World Heritage Site in the Mehrauli area of Delhi, India</item>
+        <item>The Hawa Mahal is within walking distance of City Palace and Jantar Mantar.</item>
+        <item>There is an unknown underground tunnel that Qutb Shah has said to have made as an escape route, which connected the Golconda Fort to the Charminar</item>
     </string-array>
 
-    <!--Attraction blurbs/ descriptions were obtained through various online resources, including
-    Google Maps, Wikipedia, Atlanta.net, TripAdvisor.com, Thrillist.com, and various travel articles
-    and magazines. Specific attributions contained within strings.-->
     <string-array name="attr_blurb">
-        <item>Visit Chops Lobster Bar and you might see Larry David, Russell Crowe, Justin Bieber, Billy Bob Thornton, Vin Diesel, Dennis Quaid, Kate Bosworth, or Ryan Gosling!</item>
-        <item>Park 75 at the Four Seasons Atlanta is a known celebrity hangout for breakfast
-            meetings. Celebrities visiting from out&#45;of&#45;town love the very discreet staff and ultra&#45;sophisticated atmosphere.</item>
-        <item>Not exactly an after&#45;hours spot, but Ponce City Market/’s Central Food Hall is open late and is located right alongside the Atlanta BeltLine\’s Eastside Trail, making it a prime hot spot for celebs to check out a unique Atlanta vibe.</item>
-        <item>At South City Kitchen, you might run into Kanye West, Kim Kardashian, Charles Barkley, Tom Hanks, Ben Affleck, Wanda Sykes, Melissa McCarthy, and others!</item>
-        <item>Robert De Niro, Morgan Freeman, Lady Gaga, and pretty much every celebrity who visits Atlanta, but not Mumford &amp; Sons since they got kicked out of there last year.</item>
-        <item>At Compound, you might see singers like Chris Brown, Trey Songz, or Usher; or rappers such as Cardi B, Gucci Mane, and more!</item>
-        <item>The club has been a place for celebrity sightings such as Clint Eastwood, Pauly D, and Ice Cube.</item>
-        <item>Celebrity sightings here include various cast members from several VH1 reality series, including Love &amp; Hip Hop, Basketball Wives, and more.</item>
-        <item>Vince Vaughn, Denzel Washington, Selena Gomez, Zac Efron, Jessica Alba, Chris Evans, Scarlett Johansson, Owen Wilson, Charles Barkley, John Mellencamp, Meg Ryan, Kevin Bacon, Kurt Russell, Dakota Fanning, Keri Hilson.</item>
-        <item>A&#45;listers are as drawn to those designer boutiques as us mere mortals, so don\’t be surprised if you catch a glimpse of a movie star or musician buried under bundles of shopping bags.</item>
-        <item>You\'re likely to see at least one celebrity when shopping at Phipp\'s Plaza in Atlanta. If you\'re into VH1 reality shows, check out PRESSED, a fabulous clothing boutique owned by Love and Hip Hop\'s Rasheeda Frost.</item>
-        <item>The Shops Buckhead Atlanta is known affectionately as the \“Rodeo Drive of Buckhead.\” Celebrities also live in the high rises there, too.</item>
-        <item>The Fox Theatre is where everyone goes to see the hottest plays, concerts, speeches, and anything else that requires a stage!</item>
-        <item>Everyone loves the Atlanta Falcons. High profile fans, like actor Samuel Jackson, or singer Usher, frequently leave the safety of their VIP boxes to explore the brand new stadium.</item>
-        <item>Home of the beloved Atlanta Hawks! You\'re bound to see a celebrity if you catch a game or even a concert at Philips Arena.</item>
-        <item>The Atlanta Braves have a new home at SunTrust Park! In addition to the famous baseball players, celebrities from all over the country like to drop by to watch the Braves!</item>
+        <item>Now its time to celebrate our legacy of great service and fun, and we invite you to join in for our year long festivities.</item>
+        <item>Agashiye’ in Gujarati means on the terrace. This stunning Gujarati Thali restaurant is spread over two huge terraces interconnected by a smaller one that houses a wooden cottage. Agashiye is an iconic restaurant in Ahmedabad. It celebrates Gujarati food, the most varied vegetarian cuisine in India. Agashiye is ranked as one of the top restaurants in Ahmedabad by Zomato, India’s leading restaurant search and discovery service and as one of the ‘ten best restaurants in India’ by both Trip Advisor and NDTV. Your visit to Ahmedabad is incomplete without experiencing a Gujarati meal here.</item>
+        <item>Explore delicious dishes at Bharawan Da Dhaba in Amritsar.</item>
+        <item>Success begets success. When the efforts are sincere, intention noble and the aspiration high, success is a natural byproduct. However, we don't believe in resting on our laurels. We have always reinvented ourselves in our unswerving endeavor to offer unrivalled quality and taste.</item>
+        <item>Enjoy partying in the best night clubs in Goa and have a blast with your friend circle clubbing with music and alcohol @ Titos night clubs, Baga.</item>
+        <item>Featuring India's largest casinos and integrated resorts in carefully chosen locations, Deltin Royale has redefined the country's gaming and hospitality services.</item>
+        <item>The Nightclub is an alternate world of sensory perceptions with state of the art audio systems and cutting-edge visual projection technology. A true evolution of the clubbing experience, Shroom has changed India’s nightscape with edible cocktails, fluid dishes and form-free sound. Awarded The Best Nightclub / Discotheque of 2012 by Times Food and Nightlife.</item>
+        <item>blueFROG Bangalore is a state-of-the-art club spread over 10,000 square feet with floor-to-ceiling glass walls. The acoustically treated timber panelling and futuristic sound controlled lighting ensure that you have the ultimate music experience.</item>
+        <item>Shopping at the Saturday Night Bazaar at Arpora is a great weekend activity, as the market offers an exciting mix of shopping opportunities ranging from sumptuous foodstuff, herbs and spices to handicrafts, bags, accessories, designer jewellery, rugs and carpets. The “night” factor of the Arpora market not only allows you to shop while the weather is pleasant but also adds a happening feel to it.</item>
+        <item>The market is located just opposite VSNL office building at Mahatma Gandhi Road.</item>
+        <item>These days, Mumbai is known more for its designer shops and malls than its ... The everyday carnival that is the Colaba Causeway market</item>
+        <item>Sarojini Nagar is a place that is situated in the south west District of Delhi state in India. </item>
+        <item>The Taj Mahal complex includes a large garden, a reflecting pool, a mosque and other mausoleums.</item>
+        <item>There are numerous inscriptions on the Qutub Minar in Arabic and Nagari characters.</item>
+        <item>Hawa Mahal is a palace in Jaipur, India. It is constructed of red and pink sandstone. The palace sits on the edge of the City Palace, Jaipur, and extends to the zenana, or women's chambers.</item>
+        <item>The Charminar, constructed in 1591, is a monument and mosque located in Hyderabad, Telangana, India. The landmark has become a global icon of Hyderabad, listed among the most recognized structures of India</item>
     </string-array>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
