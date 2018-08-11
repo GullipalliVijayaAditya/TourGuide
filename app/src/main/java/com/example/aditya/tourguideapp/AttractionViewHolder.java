@@ -97,6 +97,4 @@ public class AttractionViewHolder extends RecyclerView.ViewHolder implements Vie
 
         void onAttractionClicked(Attraction attrItem, int position, AttractionRecyclerViewAdapter adapter);
     }
-
-
 }

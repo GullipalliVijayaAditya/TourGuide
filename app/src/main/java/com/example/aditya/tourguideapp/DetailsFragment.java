@@ -213,15 +213,10 @@ public class DetailsFragment extends Fragment {
 
     public interface OnFragmentInteractionListener {
         void onClickDetailsLikeButton(int category, int position, boolean isFavorite);
-
         void onClickDetailsCallButton(int category, int position, String phoneLink);
-
         void onClickDetailsWebButton(int category, int position, String website);
-
         void onClickDetailsShareButton(int category, int position, String attrInfo);
-
         void onClickDetailsMapButton(int category, int position, String geolocation);
-
         void detachDetailScreen();
     }
 }

@@ -5,7 +5,6 @@ import android.content.res.TypedArray;
 
 import java.util.ArrayList;
 
-
 public class Attraction {
     private String attrName;
     private String attrPhoneNumberText;
