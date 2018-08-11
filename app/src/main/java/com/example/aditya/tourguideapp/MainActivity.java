@@ -53,13 +53,13 @@ public class MainActivity extends AppCompatActivity implements AttractionViewHol
         tabsLinearLayoutView = findViewById(R.id.main_tabs_layout);
         detailsFrameLayoutView = findViewById(R.id.attr_details_fragment_container);
         sloganTextView = findViewById(R.id.category_slogan);
-        sloganTextView.setText(R.string.home_slogan);
+        sloganTextView.setText(R.string.home_text);
         mainToolbar = (Toolbar) findViewById(R.id.main_toolbar);
         setSupportActionBar(mainToolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(false);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
-        mainToolbar.setLogo(R.drawable.app_title);
+        mainToolbar.setLogo(R.drawable.logo);
         viewPager = (ViewPager) findViewById(R.id.viewpager);
         adapter = new CategoryPagerAdapter(this, getSupportFragmentManager());
         viewPager.setAdapter(adapter);
@@ -74,20 +74,20 @@ public class MainActivity extends AppCompatActivity implements AttractionViewHol
                 Log.v("MainActivity", "Page is" + position);
                 switch (position) {
                     case HOME:
-                        sloganTextView.setText(R.string.home_slogan);
+                        sloganTextView.setText(R.string.home_text);
                         break;
                     case DINING:
                         sloganTextView.setVisibility(View.VISIBLE);
-                        sloganTextView.setText(R.string.dine_slogan);
+                        sloganTextView.setText(R.string.dine_text);
                         break;
                     case SHOPPING:
-                        sloganTextView.setText(R.string.shop_slogan);
+                        sloganTextView.setText(R.string.shop_text);
                         break;
                     case VENUES:
-                        sloganTextView.setText(R.string.venues_slogan);
+                        sloganTextView.setText(R.string.venues_text);
                         break;
                     case NIGHTLIFE:
-                        sloganTextView.setText(R.string.nightlife_slogan);
+                        sloganTextView.setText(R.string.nightlife_text);
                         break;
                 }
             }
@@ -140,7 +140,7 @@ public class MainActivity extends AppCompatActivity implements AttractionViewHol
         getSupportActionBar().setDisplayHomeAsUpEnabled(false);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
-        mainToolbar.setLogo(R.drawable.app_title);
+        mainToolbar.setLogo(R.drawable.logo);
         mainToolbar.setBackgroundColor(Color.TRANSPARENT);
         detailsFrameLayoutView.setVisibility(View.GONE);
         tabsLinearLayoutView.setVisibility(View.VISIBLE);

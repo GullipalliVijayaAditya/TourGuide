@@ -8,14 +8,14 @@ import java.util.ArrayList;
 
 public class Attraction {
     private String attrName;
-    private String attrCategory;
-    private String attrAddress;
-    private String attrCoordinates;
     private String attrPhoneNumberText;
+    private String attrCoordinates;
     private String attrPhoneNumberLink;
+    private String attrBlurb;
     private String attrWebsite;
     private String attrDescription;
-    private String attrBlurb;
+    private String attrCategory;
+    private String attrAddress;
     private int attrImageId;
     private boolean isFavorite;
 
@@ -24,15 +24,15 @@ public class Attraction {
 
     public Attraction(String name, String category, String address, String coordinates, String phone, String phoneLink, String website, String description, String blurb, int imageId) {
         attrName = name;
+        attrBlurb = blurb;
+        attrImageId = imageId;
         attrCategory = category;
         attrAddress = address;
+        attrWebsite = website;
+        attrDescription = description;
         attrCoordinates = coordinates;
         attrPhoneNumberText = phone;
         attrPhoneNumberLink = phoneLink;
-        attrWebsite = website;
-        attrDescription = description;
-        attrBlurb = blurb;
-        attrImageId = imageId;
     }
 
     public String getAttractionName() {
@@ -51,20 +51,19 @@ public class Attraction {
         attrCategory = newAttractionCategory;
     }
 
-    public String getAttractionAddress() {
-        return attrAddress;
-    }
-
-    public void setAttractionAddress(String newAttractionAddress) {
-        attrAddress = newAttractionAddress;
-    }
-
     public String getAttractionCoordinates() {
         return attrCoordinates;
     }
 
     public void setAttractionCoordinates(String newAttractionCoordinates) {
         attrCoordinates = newAttractionCoordinates;
+    }
+    public String getAttractionAddress() {
+        return attrAddress;
+    }
+
+    public void setAttractionAddress(String newAttractionAddress) {
+        attrAddress = newAttractionAddress;
     }
 
     public String getAttractionPhoneNumberText() {
@@ -91,20 +90,20 @@ public class Attraction {
         attrWebsite = newAttractionWebsite;
     }
 
-    public String getAttractionDescription() {
-        return attrDescription;
-    }
-
-    public void setAttractionDescription(String newAttractionDescription) {
-        attrDescription = newAttractionDescription;
-    }
-
     public String getAttractionBlurb() {
         return attrBlurb;
     }
 
     public void setAttractionBlurb(String newAttractionBlurb) {
         attrBlurb = newAttractionBlurb;
+    }
+
+    public String getAttractionDescription() {
+        return attrDescription;
+    }
+
+    public void setAttractionDescription(String newAttractionDescription) {
+        attrDescription = newAttractionDescription;
     }
 
     public int getAttractionImageId() {
@@ -118,14 +117,14 @@ public class Attraction {
     public ArrayList<Attraction> getFullListArray(Context context) {
         final ArrayList<Attraction> fullListArray = new ArrayList<>();
         String names[] = context.getResources().getStringArray(R.array.attr_name);
+        String website[] = context.getResources().getStringArray(R.array.attr_website);
+        String descriptions[] = context.getResources().getStringArray(R.array.attr_description);
+        String blurbs[] = context.getResources().getStringArray(R.array.attr_blurb);
         String categories[] = context.getResources().getStringArray(R.array.attr_category);
         String addresses[] = context.getResources().getStringArray(R.array.attr_address);
         String coordinates[] = context.getResources().getStringArray(R.array.attr_coordinates);
         String phones[] = context.getResources().getStringArray(R.array.attr_phone);
         String phoneLinks[] = context.getResources().getStringArray(R.array.attr_phone_link);
-        String website[] = context.getResources().getStringArray(R.array.attr_website);
-        String descriptions[] = context.getResources().getStringArray(R.array.attr_description);
-        String blurbs[] = context.getResources().getStringArray(R.array.attr_blurb);
         TypedArray attrImages = context.getResources().obtainTypedArray(R.array.attr_images);
         for (int i = 0; i < names.length; i++) {
             fullListArray.add(new Attraction(names[i], categories[i], addresses[i], coordinates[i], phones[i], phoneLinks[i], website[i], descriptions[i], blurbs[i], attrImages.getResourceId(i, -1)));
@@ -136,14 +135,14 @@ public class Attraction {
 
     public ArrayList<Attraction> getDiningArray(Context context) {
         final ArrayList<Attraction> diningArray = new ArrayList<>();
-        String names[] = context.getResources().getStringArray(R.array.attr_name);
-        String categories[] = context.getResources().getStringArray(R.array.attr_category);
+        String website[] = context.getResources().getStringArray(R.array.attr_website);
         String addresses[] = context.getResources().getStringArray(R.array.attr_address);
         String coordinates[] = context.getResources().getStringArray(R.array.attr_coordinates);
+        String descriptions[] = context.getResources().getStringArray(R.array.attr_description);
+        String names[] = context.getResources().getStringArray(R.array.attr_name);
+        String categories[] = context.getResources().getStringArray(R.array.attr_category);
         String phones[] = context.getResources().getStringArray(R.array.attr_phone);
         String phoneLinks[] = context.getResources().getStringArray(R.array.attr_phone_link);
-        String website[] = context.getResources().getStringArray(R.array.attr_website);
-        String descriptions[] = context.getResources().getStringArray(R.array.attr_description);
         String blurbs[] = context.getResources().getStringArray(R.array.attr_blurb);
         TypedArray attrImages = context.getResources().obtainTypedArray(R.array.attr_images);
         for (int i = 0; i < 4; i++) {

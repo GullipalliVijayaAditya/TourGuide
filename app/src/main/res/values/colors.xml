@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#263238</color>
-    <color name="colorPrimaryDark">#3d2700</color>
+    <color name="colorPrimaryDark">#1300c1</color>
     <color name="colorAccent">#5441ff</color>
     <color name="primaryLightColor">#4f5b62</color>
     <color name="secondaryColor">#3d11ff</color>
@@ -10,8 +10,7 @@
     <color name="thirdLightColor">#74cfc0</color>
     <color name="primaryTextColor">#ffffff</color>
     <color name="secondaryTextColor">#000000</color>
-    <color name="default_background">#ededed</color>
+    <color name="default_background">#b4c5ff</color>
     <color name="nightlife_background">#8c83d4</color>
     <color name="grey">#dedddd</color>
-
 </resources>

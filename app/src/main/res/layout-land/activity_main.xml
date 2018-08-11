@@ -12,11 +12,11 @@
     <android.support.v7.widget.Toolbar
         android:id="@+id/main_toolbar"
         style="@style/toolbar_style"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
+        android:layout_width="74dp"
+        android:layout_height="86dp"
         android:minHeight="?attr/actionBarSize"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:logo="@drawable/app_title"
+        app:logo="@drawable/logo"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:subtitleTextAppearance="@style/Base.TextAppearance.AppCompat.Medium"
         app:titleMarginBottom="@dimen/toolbar_margin_bottom"
@@ -73,7 +73,7 @@
         android:fontFamily="cursive"
         android:textSize="@dimen/slogan_text_size"
         android:textStyle="bold"
-        tools:text="@string/home_slogan" />
+        tools:text="@string/home_text" />
 
     <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"

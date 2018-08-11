@@ -1,8 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><!-- Images used in this project were obtained on the attrs' websites. This project is for
-educational purposes only. -->
-
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <array name="attr_images">
         <item>@drawable/chops</item>
         <item>@drawable/park_75</item>

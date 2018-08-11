@@ -93,27 +93,27 @@ public class DetailsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.attraction_details_fragment, container, false);
-        callButton = view.findViewById(R.id.call_button);
         webButton = view.findViewById(R.id.web_button);
         mapsButton = view.findViewById(R.id.map_button);
+        callButton = view.findViewById(R.id.call_button);
         shareButton = view.findViewById(R.id.share_button);
-        attrBlurb = view.findViewById(R.id.attr_snippet);
-        attrDescription = view.findViewById(R.id.attr_description);
+        moreInfoTextView = view.findViewById(R.id.more_info);
+        moreInfoTable = view.findViewById(R.id.more_info_table);
         attrName = view.findViewById(R.id.attr_name);
         attrImage = view.findViewById(R.id.attr_image);
         attrPhone = view.findViewById(R.id.attr_phone);
         attrAddress = view.findViewById(R.id.attr_address);
+        attrBlurb = view.findViewById(R.id.attr_snippet);
+        attrDescription = view.findViewById(R.id.attr_description);
         attrWebsite = view.findViewById(R.id.attr_website_text);
-        moreInfoTextView = view.findViewById(R.id.more_info);
-        moreInfoTable = view.findViewById(R.id.more_info_table);
         viewMoreInfo = false;
         moreInfoTable.setVisibility(View.GONE);
         attrImage.setImageResource(currentAttraction.getAttractionImageId());
+        attrAddress.setText(currentAttraction.getAttractionAddress());
+        attrPhone.setText(currentAttraction.getAttractionPhoneNumberText());
         attrName.setText(currentAttraction.getAttractionName());
         attrBlurb.setText(currentAttraction.getAttractionBlurb());
         attrDescription.setText(currentAttraction.getAttractionDescription());
-        attrAddress.setText(currentAttraction.getAttractionAddress());
-        attrPhone.setText(currentAttraction.getAttractionPhoneNumberText());
         attrWebsite.setText(currentAttraction.getAttractionWebsite());
         likeButton = view.findViewById(R.id.like_button);
         sharedPreferences = mContext.getSharedPreferences(MY_PREFERENCES, MODE_PRIVATE);

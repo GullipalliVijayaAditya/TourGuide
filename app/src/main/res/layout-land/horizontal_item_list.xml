@@ -29,7 +29,6 @@
             android:scaleType="centerCrop"
             android:src="@drawable/compound" />
 
-        <!-- Row with Attraction Name and Like Icon -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

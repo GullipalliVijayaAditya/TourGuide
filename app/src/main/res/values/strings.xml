@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ATL Star</string>
+    <string name="app_name">Tour Guide App</string>
     <string name="hello_blank_fragment_old">Test</string>
     <string name="home_fragment">Home</string>
     <string name="featured_text">Featured Places</string>
@@ -12,11 +12,11 @@
         able to be out in public without over the top reactions from fans and others. \n\nYou
         are not authorized to use this app for the purpose of stalking and/ or harassing celebrities.</string>
     <string name="disclaimer_header_text">Important Information</string>
-    <string name="home_slogan">Hollywood of the South</string>
-    <string name="dine_slogan">where celebs eat</string>
-    <string name="shop_slogan">where celebs shop</string>
-    <string name="venues_slogan">where celebs play</string>
-    <string name="nightlife_slogan">where celebs party</string>
+    <string name="home_text">Amazing India</string>
+    <string name="dine_text">where celebs eat</string>
+    <string name="shop_text">where celebs shop</string>
+    <string name="venues_text">where celebs play</string>
+    <string name="nightlife_text">where celebs party</string>
     <string name="dine_fragment">Dining</string>
     <string name="shop_fragment">Shopping</string>
     <string name="venues_fragment">Venues</string>
