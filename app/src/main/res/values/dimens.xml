@@ -27,11 +27,11 @@
     <dimen name="icon_row_width">80dp</dimen>
     <dimen name="text_vertical_item_list_margin">8dp</dimen>
     <dimen name="details_feature_image">257dp</dimen>
-    <dimen name="slogan_horizontal_margin">100dp</dimen>
+    <dimen name="text_horizontal_margin">100dp</dimen>
     <dimen name="land_featured_image_height">80dp</dimen>
     <dimen name="land_card_width">300dp</dimen>
-    <dimen name="slogan_vertical_margin">15dp</dimen>
-    <dimen name="slogan_text_size">30sp</dimen>
+    <dimen name="text_vertical_margin">15dp</dimen>
+    <dimen name="text_text_size">30sp</dimen>
     <dimen name="intro_header_text_size">30sp</dimen>
     <dimen name="featured_text_size">20sp</dimen>
     <dimen name="skyline_height">150dp</dimen>

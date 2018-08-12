@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity implements AttractionViewHol
     private static final int NIGHTLIFE = 4;
     private static final int DETAIL_SCREEN = 5;
     SharedPreferences sharedPreferences;
-    TextView sloganTextView;
+    TextView textTextView;
     LinearLayout tabsLinearLayoutView;
     FrameLayout detailsFrameLayoutView;
     ViewPager viewPager;
@@ -52,8 +52,8 @@ public class MainActivity extends AppCompatActivity implements AttractionViewHol
         topHalfView = findViewById(R.id.top_half_tab_layout);
         tabsLinearLayoutView = findViewById(R.id.main_tabs_layout);
         detailsFrameLayoutView = findViewById(R.id.attr_details_fragment_container);
-        sloganTextView = findViewById(R.id.category_slogan);
-        sloganTextView.setText(R.string.home_text);
+        textTextView = findViewById(R.id.category_text);
+        textTextView.setText(R.string.home_text);
         mainToolbar = (Toolbar) findViewById(R.id.main_toolbar);
         setSupportActionBar(mainToolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(false);
@@ -74,20 +74,20 @@ public class MainActivity extends AppCompatActivity implements AttractionViewHol
                 Log.v("MainActivity", "Page is" + position);
                 switch (position) {
                     case HOME:
-                        sloganTextView.setText(R.string.home_text);
+                        textTextView.setText(R.string.home_text);
                         break;
                     case DINING:
-                        sloganTextView.setVisibility(View.VISIBLE);
-                        sloganTextView.setText(R.string.dine_text);
+                        textTextView.setVisibility(View.VISIBLE);
+                        textTextView.setText(R.string.dine_text);
                         break;
                     case SHOPPING:
-                        sloganTextView.setText(R.string.shop_text);
+                        textTextView.setText(R.string.shop_text);
                         break;
                     case HISTORIC:
-                        sloganTextView.setText(R.string.historic_text);
+                        textTextView.setText(R.string.historic_text);
                         break;
                     case NIGHTLIFE:
-                        sloganTextView.setText(R.string.nightlife_text);
+                        textTextView.setText(R.string.nightlife_text);
                         break;
                 }
             }
@@ -144,7 +144,7 @@ public class MainActivity extends AppCompatActivity implements AttractionViewHol
         mainToolbar.setBackgroundColor(Color.TRANSPARENT);
         detailsFrameLayoutView.setVisibility(View.GONE);
         tabsLinearLayoutView.setVisibility(View.VISIBLE);
-        sloganTextView.setVisibility(View.VISIBLE);
+        textTextView.setVisibility(View.VISIBLE);
     }
 
     @Override
@@ -268,7 +268,7 @@ public class MainActivity extends AppCompatActivity implements AttractionViewHol
             mainToolbar.setBackgroundResource(R.drawable.scrim);
             mainToolbar.setTitleTextColor(Color.WHITE);
             mainToolbar.setTitle(currentAttractionItem.getAttractionName());
-            sloganTextView.setVisibility(View.GONE);
+            textTextView.setVisibility(View.GONE);
             tabsLinearLayoutView.setVisibility(View.GONE);
             detailsFrameLayoutView.setVisibility(View.VISIBLE);
 
